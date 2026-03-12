@@ -4,25 +4,58 @@
 
 ```
 CommonGEN/
-├── code/                      # 代码文件
-│   ├── test_discriminator_commongenv.py    # 判别器独立测试脚本
-│   ├── preprocess_commongenv2.py           # 数据预处理脚本
-│   └── fix_discriminator_capacity.py       # 判别器容量修复脚本
+├── ANSWER.md                     # 参数冻结问题的回答文档
+├── README.md                     # 项目说明
+├── quick_start.sh                # 快速启动脚本
 │
-├── data/                      # 数据文件
-│   └── data_commongenv/
-│       ├── commongenv_train_trajectories.json   # 训练数据（CoT格式）
-│       └── commongenv_val_trajectories.json     # 验证数据（CoT格式）
+├── data/data_commongenv/
+│   ├── commongenv_cot_train_llm.json        # 主训练数据 (2000条 CoT)
+│   ├── commongenv_train_trajectories.json   # 原始训练轨迹
+│   └── commongenv_val_trajectories.json     # 验证轨迹
 │
-├── checkpoints/              # 模型检查点
-│   └── (训练后的模型将保存在这里)
+├── code/                         # ✅ 核心代码（5个脚本）
+│   ├── train_commongen.py            # GAIL 主训练脚本
+│   ├── pretrain_discriminator.py     # 判别器预训练
+│   ├── warmup_generator.py           # 生成器 SFT 热身
+│   ├── evaluate_warmup_effect.py     # 热身效果评估
+│   ├── preprocess_commongenv2.py     # 数据预处理
+│   ├── data_gen/generate_cot_data.py # CoT 数据生成
+│   ├── logs/gail_2026-01-28_1821.log # 完整训练日志 (453KB)
+│   └── swanlog/
+│       ├── run-20260109_153642 (38M) # 第1次完整训练可视化
+│       └── run-20260210_161026 (33M) # 最新训练可视化
 │
-├── logs/                     # 日志文件
-│   └── disc_commongenv_test.log            # 判别器测试日志
+├── checkpoints/                  # ✅ 模型权重
+│   ├── discriminator_pretrained_gap0.9866.pt  # 训练用判别器
+│   ├── discriminator_pretrained_gap0.9963.pt  # 高 gap 判别器
+│   ├── discriminator_pretrained_gap0.9974.pt  # 最高 gap 判别器
+│   ├── sft_warmup/final_adapter/              # SFT 热身 adapter
+│   ├── run_commongen_20260109_153558/         # 第1次完整 GAIL 训练
+│   │   ├── generator_latest.pt / generator_best.pt
+│   │   └── discriminator_latest.pt / discriminator_best.pt
+│   └── run_commongen_20260128_182137/         # 最新 GAIL 训练
+│       ├── generator_latest.pt / generator_best.pt / generator_interrupt.pt
+│       └── discriminator_latest.pt / discriminator_best.pt
 │
-└── docs/                     # 文档和计划
-    ├── COMMONGENV_EXPERIMENT_PLAN.md      # 完整实验计划
-    └── NEXT_STEPS.md                      # 下一步行动计划
+├── results/                      # ✅ 实验结果
+│   ├── run_commongen_20260109_153558/trajectory_comparison_epoch_0.json
+│   ├── run_commongen_20260128_182137/trajectory_comparison_epoch_0.json
+│   ├── warmup_effect_eval_20260128_164611.json
+│   └── warmup_effect_eval_20260128_173411.json
+│
+├── logs/                         # ✅ 判别器调优历史日志 (保留有完整结果的)
+│   ├── pretrain_discriminator_*.json  x3  # 预训练结果
+│   ├── disc_commongenv_test.log           # 初始判别器测试
+│   ├── head_only_*.log/json               # Head-only 实验
+│   ├── layerwise_*.log                    # 分层学习率实验
+│   └── test_v2_fixed_*.log               # 容量修复测试
+│
+└── docs/                         # 实验文档
+    ├── COMMONGENV_EXPERIMENT_PLAN.md
+    ├── DISCRIMINATOR_CAPACITY_FIX.md
+    ├── NEXT_STEPS.md
+    ├── REPRODUCIBILITY.md
+    └── WHY_UNFREEZING_FAILED.md
 ```
 
 ## 🎯 项目目标

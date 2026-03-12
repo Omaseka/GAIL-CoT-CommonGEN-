@@ -1,0 +1,50 @@
+
+============================================================
+🧪 判别器测试 - 分层学习率版本
+============================================================
+设备: cuda:0
+最大长度: 512
+
+加载模型...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:10,  3.62s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:08<00:08,  4.11s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:12<00:04,  4.26s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:15<00:00,  3.87s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:15<00:00,  3.94s/it]
+
+加载数据...
+Loading and processing trajectories from: /home/zhoukaining/pro_cusor/GAIL_train/CommonGEN/data/data_commongenv/commongenv_train_trajectories.json
+Processing trajectories:   0%|          | 0/100 [00:00<?, ?it/s]Processing trajectories: 100%|██████████| 100/100 [00:00<00:00, 1604.81it/s]
+/home/zhoukaining/pro_cusor/GAIL_train/discriminator.py:244: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(dtype=torch.bfloat16):
+Successfully processed 100 expert trajectories.
+专家轨迹数: 100
+
+生成假轨迹...
+假轨迹数: 50
+
+初始化判别器...
+
+开始训练...
+
+============================================================
+🔥 阶段1：预热 - 只训练判别器头部
+============================================================
+可训练参数: 11,022,339
+Epoch 1/2 | D(expert)=0.5724 | D(gen)=0.5362 | Gap=0.0362
+Epoch 2/2 | D(expert)=0.5206 | D(gen)=0.4574 | Gap=0.0631
+
+============================================================
+🔥 阶段2：微调 - 解冻编码器最后2层
+============================================================
+📊 编码器总层数: 28
+🔓 准备解冻最后 2 层...
+   解冻第 26 层...
+Traceback (most recent call last):
+  File "/home/zhoukaining/pro_cusor/GAIL_train/CommonGEN/code/test_discriminator_with_layerwise_lr.py", line 394, in <module>
+    main()
+  File "/home/zhoukaining/pro_cusor/GAIL_train/CommonGEN/code/test_discriminator_with_layerwise_lr.py", line 349, in main
+    results = train_discriminator_with_layerwise_lr(
+  File "/home/zhoukaining/pro_cusor/GAIL_train/CommonGEN/code/test_discriminator_with_layerwise_lr.py", line 202, in train_discriminator_with_layerwise_lr
+    discriminator.unfreeze_top_layers(num_layers=2)
+  File "/home/zhoukaining/pro_cusor/GAIL_train/discriminator.py", line 203, in unfreeze_top_layers
+    param.requires_grad = True
+  File "/home/zhoukaining/anaconda3/envs/llm/lib/python3.10/site-packages/bitsandbytes/nn/modules.py", line 298, in __torch_function__
+    return func(*args, **kwargs)
+RuntimeError: only Tensors of floating point and complex dtype can require gradients

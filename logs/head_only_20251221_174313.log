@@ -1,0 +1,66 @@
+
+============================================================
+🧪 判别器测试 - 只训练头部版本
+============================================================
+设备: cuda:0
+最大长度: 512
+
+加载模型...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:03<00:10,  3.65s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:08<00:08,  4.14s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:12<00:04,  4.27s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:15<00:00,  3.88s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:15<00:00,  3.96s/it]
+
+加载数据...
+Loading and processing trajectories from: /home/zhoukaining/pro_cusor/GAIL_train/CommonGEN/data/data_commongenv/commongenv_train_trajectories.json
+Processing trajectories:   0%|          | 0/100 [00:00<?, ?it/s]Processing trajectories: 100%|██████████| 100/100 [00:00<00:00, 1548.47it/s]
+/home/zhoukaining/pro_cusor/GAIL_train/discriminator.py:244: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(dtype=torch.bfloat16):
+Successfully processed 100 expert trajectories.
+专家轨迹数: 100
+
+生成假轨迹...
+假轨迹数: 50
+
+初始化判别器...
+
+开始训练...
+
+============================================================
+🔥 训练判别器头部（编码器保持冻结）
+============================================================
+可训练参数: 11,022,339
+训练epochs: 10
+学习率: 5e-06
+批大小: 16
+Epoch 1/10 | Loss=1.3937 | D(exp)=0.4483 | D(gen)=0.4362 | Gap=0.0121 🌟
+Epoch 2/10 | Loss=1.2808 | D(exp)=0.4976 | D(gen)=0.4333 | Gap=0.0644 🌟
+Epoch 3/10 | Loss=1.2129 | D(exp)=0.5327 | D(gen)=0.4348 | Gap=0.0979 🌟
+Epoch 4/10 | Loss=1.1344 | D(exp)=0.5563 | D(gen)=0.4151 | Gap=0.1412 🌟
+Epoch 5/10 | Loss=1.0990 | D(exp)=0.5639 | D(gen)=0.4005 | Gap=0.1634 🌟
+Epoch 6/10 | Loss=1.0355 | D(exp)=0.5765 | D(gen)=0.3757 | Gap=0.2008 🌟
+Epoch 7/10 | Loss=0.9767 | D(exp)=0.5954 | D(gen)=0.3574 | Gap=0.2381 🌟
+Epoch 8/10 | Loss=0.9438 | D(exp)=0.6105 | D(gen)=0.3503 | Gap=0.2602 🌟
+Epoch 9/10 | Loss=0.8592 | D(exp)=0.6329 | D(gen)=0.3195 | Gap=0.3134 🌟
+Epoch 10/10 | Loss=0.7891 | D(exp)=0.6659 | D(gen)=0.3085 | Gap=0.3574 🌟
+
+🏆 最佳Gap: 0.3574 (Epoch 10)
+
+============================================================
+📊 训练完成！结果总结：
+============================================================
+
+训练进度：
+  Epoch  1: Gap = 0.0121 🌟 最佳
+  Epoch  2: Gap = 0.0644 🌟 最佳
+  Epoch  3: Gap = 0.0979 🌟 最佳
+  Epoch  4: Gap = 0.1412 🌟 最佳
+  Epoch  5: Gap = 0.1634 🌟 最佳
+  Epoch  6: Gap = 0.2008 🌟 最佳
+  Epoch  7: Gap = 0.2381 🌟 最佳
+  Epoch  8: Gap = 0.2602 🌟 最佳
+  Epoch  9: Gap = 0.3134 🌟 最佳
+  Epoch 10: Gap = 0.3574 🌟 最佳
+
+🏆 最终最佳Gap: 0.3574
+✅ 成功！判别器能有效区分expert和fake
+
+结果已保存到: ../logs/head_only_test_20251221_174359.json
+Checkpoint已保存到: ../checkpoints/discriminator_head_only_gap0.3574.pt

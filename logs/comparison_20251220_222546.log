@@ -1,0 +1,52 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+================================================================================
+🔬 判别器解冻效果对比实验
+================================================================================
+
+[1/5] 加载模型和数据...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:01<00:03,  1.26s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:02<00:02,  1.24s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:03<00:01,  1.25s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.24s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:04<00:00,  1.24s/it]
+Loading and processing trajectories from: ../data/data_commongenv/commongenv_train_trajectories.json
+Processing trajectories:   0%|          | 0/100 [00:00<?, ?it/s]Processing trajectories: 100%|██████████| 100/100 [00:00<00:00, 1552.58it/s]
+/home/zhoukaining/pro_cusor/GAIL_train/discriminator.py:244: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast(dtype=torch.bfloat16):
+Successfully processed 100 expert trajectories.
+数据准备完成: 100条专家数据, 50条假数据
+
+[2/5] 测试判别器（全冻结版本）...
+可训练参数: 11,022,339
+训练3个epoch...
+
+[3/5] 测试判别器（解冻顶层版本）...
+📊 编码器总层数: 28
+🔓 准备解冻最后 2 层...
+   解冻第 26 层...
+   解冻第 27 层...
+
+✅ 解冻完成！
+   解冻参数: 466,115,584 (466.1M)
+   总可训练参数: 477,137,923 (477.1M)
+   总参数: 7,626,638,851 (7.63B)
+   可训练比例: 6.26%
+训练3个epoch...
+
+[4/5] 结果对比:
+================================================================================
+Epoch      冻结-D(exp)       冻结-D(gen)       冻结-Gap          解冻-D(exp)       解冻-D(gen)       解冻-Gap         
+--------------------------------------------------------------------------------
+1          0.508           0.460           0.047           0.456           0.469           -0.013         
+2          0.541           0.451           0.090           0.467           0.455           0.013          
+3          0.569           0.441           0.128           0.493           0.463           0.030          
+
+[5/5] 结论:
+================================================================================
+🔒 全冻结最终Gap:    0.1278
+🔓 解冻后最终Gap:    0.0305
+📈 提升幅度:         -76.2%
+================================================================================
+
+❌ 解冻后效果不明显，可能需要：
+   1. 检查数据质量（假样本是否足够劣质）
+   2. 增大判别器头部容量
+   3. 使用LoRA微调
+
+💾 提示：如果效果好，记得保存checkpoint供完整训练使用

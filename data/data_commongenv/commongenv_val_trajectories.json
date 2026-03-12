@@ -1,0 +1,442 @@
+[
+  {
+    "question": "Create a natural sentence incorporating: field, look, stand",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: field, look, stand",
+        "a1": "field, look, stand"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: The player stood in the field looking at the batter.",
+        "a3": "The player stood in the field looking at the batter."
+      },
+      {
+        "s4": "Final Answer: The player stood in the field looking at the batter.",
+        "a4": "The player stood in the field looking at the batter."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: field, look, stand",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: field, look, stand",
+        "a1": "field, look, stand"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: The coach stands along the field, looking at the goalkeeper.",
+        "a3": "The coach stands along the field, looking at the goalkeeper."
+      },
+      {
+        "s4": "Final Answer: The coach stands along the field, looking at the goalkeeper.",
+        "a4": "The coach stands along the field, looking at the goalkeeper."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: field, look, stand",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: field, look, stand",
+        "a1": "field, look, stand"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: I stood and looked across the field, peacefully.",
+        "a3": "I stood and looked across the field, peacefully."
+      },
+      {
+        "s4": "Final Answer: I stood and looked across the field, peacefully.",
+        "a4": "I stood and looked across the field, peacefully."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: field, look, stand",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: field, look, stand",
+        "a1": "field, look, stand"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: Someone stands, looking around the empty field.",
+        "a3": "Someone stands, looking around the empty field."
+      },
+      {
+        "s4": "Final Answer: Someone stands, looking around the empty field.",
+        "a4": "Someone stands, looking around the empty field."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: dance, kid, room",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: dance, kid, room",
+        "a1": "dance, kid, room"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: The silly kid loves to dance in her room.",
+        "a3": "The silly kid loves to dance in her room."
+      },
+      {
+        "s4": "Final Answer: The silly kid loves to dance in her room.",
+        "a4": "The silly kid loves to dance in her room."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: dance, kid, room",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: dance, kid, room",
+        "a1": "dance, kid, room"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: the dance kid  room is full of kids",
+        "a3": "the dance kid  room is full of kids"
+      },
+      {
+        "s4": "Final Answer: the dance kid  room is full of kids",
+        "a4": "the dance kid  room is full of kids"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: dance, kid, room",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: dance, kid, room",
+        "a1": "dance, kid, room"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A kid is dancing in the room.",
+        "a3": "A kid is dancing in the room."
+      },
+      {
+        "s4": "Final Answer: A kid is dancing in the room.",
+        "a4": "A kid is dancing in the room."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: dance, kid, room",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: dance, kid, room",
+        "a1": "dance, kid, room"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A group of kids are dancing around a living room.",
+        "a3": "A group of kids are dancing around a living room."
+      },
+      {
+        "s4": "Final Answer: A group of kids are dancing around a living room.",
+        "a4": "A group of kids are dancing around a living room."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: cat, couch, pet",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: cat, couch, pet",
+        "a1": "cat, couch, pet"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A pet cat likes to sleep on a couch.",
+        "a3": "A pet cat likes to sleep on a couch."
+      },
+      {
+        "s4": "Final Answer: A pet cat likes to sleep on a couch.",
+        "a4": "A pet cat likes to sleep on a couch."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: cat, couch, pet",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: cat, couch, pet",
+        "a1": "cat, couch, pet"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: My pet cat love to sleep on the couch.",
+        "a3": "My pet cat love to sleep on the couch."
+      },
+      {
+        "s4": "Final Answer: My pet cat love to sleep on the couch.",
+        "a4": "My pet cat love to sleep on the couch."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: cat, couch, pet",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: cat, couch, pet",
+        "a1": "cat, couch, pet"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: The woman pet the cat that was sat on the couch.",
+        "a3": "The woman pet the cat that was sat on the couch."
+      },
+      {
+        "s4": "Final Answer: The woman pet the cat that was sat on the couch.",
+        "a4": "The woman pet the cat that was sat on the couch."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: cat, couch, pet",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: cat, couch, pet",
+        "a1": "cat, couch, pet"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: actor petting long haired gray cat on couch",
+        "a3": "actor petting long haired gray cat on couch"
+      },
+      {
+        "s4": "Final Answer: actor petting long haired gray cat on couch",
+        "a4": "actor petting long haired gray cat on couch"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: building, climb, side",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: building, climb, side",
+        "a1": "building, climb, side"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: The mouse climbed the side of the building.",
+        "a3": "The mouse climbed the side of the building."
+      },
+      {
+        "s4": "Final Answer: The mouse climbed the side of the building.",
+        "a4": "The mouse climbed the side of the building."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: building, climb, side",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: building, climb, side",
+        "a1": "building, climb, side"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: I climbed the side of the building.",
+        "a3": "I climbed the side of the building."
+      },
+      {
+        "s4": "Final Answer: I climbed the side of the building.",
+        "a4": "I climbed the side of the building."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: building, climb, side",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: building, climb, side",
+        "a1": "building, climb, side"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A girl climbs up the side of a building.",
+        "a3": "A girl climbs up the side of a building."
+      },
+      {
+        "s4": "Final Answer: A girl climbs up the side of a building.",
+        "a4": "A girl climbs up the side of a building."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: building, climb, side",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: building, climb, side",
+        "a1": "building, climb, side"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: ivy climbs the side of a building .",
+        "a3": "ivy climbs the side of a building ."
+      },
+      {
+        "s4": "Final Answer: ivy climbs the side of a building .",
+        "a4": "ivy climbs the side of a building ."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: climb, talk, wall",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: climb, talk, wall",
+        "a1": "climb, talk, wall"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: The woman thats talking teaches her students how to climb the wall.",
+        "a3": "The woman thats talking teaches her students how to climb the wall."
+      },
+      {
+        "s4": "Final Answer: The woman thats talking teaches her students how to climb the wall.",
+        "a4": "The woman thats talking teaches her students how to climb the wall."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: climb, talk, wall",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: climb, talk, wall",
+        "a1": "climb, talk, wall"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: The person climbed up the wall to talk to the man.",
+        "a3": "The person climbed up the wall to talk to the man."
+      },
+      {
+        "s4": "Final Answer: The person climbed up the wall to talk to the man.",
+        "a4": "The person climbed up the wall to talk to the man."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: climb, talk, wall",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: climb, talk, wall",
+        "a1": "climb, talk, wall"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: The man talked about how to climb walls.",
+        "a3": "The man talked about how to climb walls."
+      },
+      {
+        "s4": "Final Answer: The man talked about how to climb walls.",
+        "a4": "The man talked about how to climb walls."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: climb, talk, wall",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: climb, talk, wall",
+        "a1": "climb, talk, wall"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A man is talking in front of a climbing wall.",
+        "a3": "A man is talking in front of a climbing wall."
+      },
+      {
+        "s4": "Final Answer: A man is talking in front of a climbing wall.",
+        "a4": "A man is talking in front of a climbing wall."
+      }
+    ]
+  }
+]

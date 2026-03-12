@@ -1,0 +1,2202 @@
+[
+  {
+    "question": "Create a natural sentence incorporating: broccoli, cheese, chicken, pizza",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: broccoli, cheese, chicken, pizza",
+        "a1": "broccoli, cheese, chicken, pizza"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A grilled pizza with chicken, broccoli and cheese.",
+        "a3": "A grilled pizza with chicken, broccoli and cheese."
+      },
+      {
+        "s4": "Final Answer: A grilled pizza with chicken, broccoli and cheese.",
+        "a4": "A grilled pizza with chicken, broccoli and cheese."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: broccoli, cheese, chicken, pizza",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: broccoli, cheese, chicken, pizza",
+        "a1": "broccoli, cheese, chicken, pizza"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: The pan pizza topped with broccoli, chicken, and cheese, is ready for the oven",
+        "a3": "The pan pizza topped with broccoli, chicken, and cheese, is ready for the oven"
+      },
+      {
+        "s4": "Final Answer: The pan pizza topped with broccoli, chicken, and cheese, is ready for the oven",
+        "a4": "The pan pizza topped with broccoli, chicken, and cheese, is ready for the oven"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: island, sea, town",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: island, sea, town",
+        "a1": "island, sea, town"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: old town and sea on the island",
+        "a3": "old town and sea on the island"
+      },
+      {
+        "s4": "Final Answer: old town and sea on the island",
+        "a4": "old town and sea on the island"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: island, sea, town",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: island, sea, town",
+        "a1": "island, sea, town"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: beautiful blue sea in town in the island",
+        "a3": "beautiful blue sea in town in the island"
+      },
+      {
+        "s4": "Final Answer: beautiful blue sea in town in the island",
+        "a4": "beautiful blue sea in town in the island"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: enclosure, giraffes, zoo",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: enclosure, giraffes, zoo",
+        "a1": "enclosure, giraffes, zoo"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: Three adult giraffes in a zoo like enclosure.",
+        "a3": "Three adult giraffes in a zoo like enclosure."
+      },
+      {
+        "s4": "Final Answer: Three adult giraffes in a zoo like enclosure.",
+        "a4": "Three adult giraffes in a zoo like enclosure."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: enclosure, giraffes, zoo",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: enclosure, giraffes, zoo",
+        "a1": "enclosure, giraffes, zoo"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: Group of giraffes within an enclosure at a zoo",
+        "a3": "Group of giraffes within an enclosure at a zoo"
+      },
+      {
+        "s4": "Final Answer: Group of giraffes within an enclosure at a zoo",
+        "a4": "Group of giraffes within an enclosure at a zoo"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: enclosure, giraffes, zoo",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: enclosure, giraffes, zoo",
+        "a1": "enclosure, giraffes, zoo"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: Two giraffes standing in an enclosure at the zoo.",
+        "a3": "Two giraffes standing in an enclosure at the zoo."
+      },
+      {
+        "s4": "Final Answer: Two giraffes standing in an enclosure at the zoo.",
+        "a4": "Two giraffes standing in an enclosure at the zoo."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: cliff, part, sea",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: cliff, part, sea",
+        "a1": "cliff, part, sea"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: steep cliff by sea in southern part",
+        "a3": "steep cliff by sea in southern part"
+      },
+      {
+        "s4": "Final Answer: steep cliff by sea in southern part",
+        "a4": "steep cliff by sea in southern part"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: keyboard, monitor, tower",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: keyboard, monitor, tower",
+        "a1": "keyboard, monitor, tower"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A desk scene with a tower, monitor and keyboard.",
+        "a3": "A desk scene with a tower, monitor and keyboard."
+      },
+      {
+        "s4": "Final Answer: A desk scene with a tower, monitor and keyboard.",
+        "a4": "A desk scene with a tower, monitor and keyboard."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: keyboard, monitor, tower",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: keyboard, monitor, tower",
+        "a1": "keyboard, monitor, tower"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A monitor with an ipod, keyboard, mouse, camera, speakers and hard drive tower.",
+        "a3": "A monitor with an ipod, keyboard, mouse, camera, speakers and hard drive tower."
+      },
+      {
+        "s4": "Final Answer: A monitor with an ipod, keyboard, mouse, camera, speakers and hard drive tower.",
+        "a4": "A monitor with an ipod, keyboard, mouse, camera, speakers and hard drive tower."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: center, clock, display",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: center, clock, display",
+        "a1": "center, clock, display"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: The tower in the center has a clock displayed on it. ",
+        "a3": "The tower in the center has a clock displayed on it. "
+      },
+      {
+        "s4": "Final Answer: The tower in the center has a clock displayed on it. ",
+        "a4": "The tower in the center has a clock displayed on it. "
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: festival, part, pavement",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: festival, part, pavement",
+        "a1": "festival, part, pavement"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: person of pavement performs as part of the festival",
+        "a3": "person of pavement performs as part of the festival"
+      },
+      {
+        "s4": "Final Answer: person of pavement performs as part of the festival",
+        "a4": "person of pavement performs as part of the festival"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: clock, foreground, tower",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: clock, foreground, tower",
+        "a1": "clock, foreground, tower"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: prepositional phrase",
+        "a2": "prepositional phrase"
+      },
+      {
+        "s3": "Step 3. Generate sentence: and clock tower with the fountain in the foreground",
+        "a3": "and clock tower with the fountain in the foreground"
+      },
+      {
+        "s4": "Final Answer: and clock tower with the fountain in the foreground",
+        "a4": "and clock tower with the fountain in the foreground"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: center, tower, town",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: center, tower, town",
+        "a1": "center, tower, town"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A clock tower in the center of a town.",
+        "a3": "A clock tower in the center of a town."
+      },
+      {
+        "s4": "Final Answer: A clock tower in the center of a town.",
+        "a4": "A clock tower in the center of a town."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: giraffes, plain, zebra",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: giraffes, plain, zebra",
+        "a1": "giraffes, plain, zebra"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: Gazelles, zebras and giraffes roaming around the plains.",
+        "a3": "Gazelles, zebras and giraffes roaming around the plains."
+      },
+      {
+        "s4": "Final Answer: Gazelles, zebras and giraffes roaming around the plains.",
+        "a4": "Gazelles, zebras and giraffes roaming around the plains."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: giraffes, plain, zebra",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: giraffes, plain, zebra",
+        "a1": "giraffes, plain, zebra"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: Numerous animals, such as zebras and giraffes, on a dry grassy plain.",
+        "a3": "Numerous animals, such as zebras and giraffes, on a dry grassy plain."
+      },
+      {
+        "s4": "Final Answer: Numerous animals, such as zebras and giraffes, on a dry grassy plain.",
+        "a4": "Numerous animals, such as zebras and giraffes, on a dry grassy plain."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: country, part, world",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: country, part, world",
+        "a1": "country, part, world"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: country a part of the world with its own borders and government",
+        "a3": "country a part of the world with its own borders and government"
+      },
+      {
+        "s4": "Final Answer: country a part of the world with its own borders and government",
+        "a4": "country a part of the world with its own borders and government"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: island, landscape, sea",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: island, landscape, sea",
+        "a1": "island, landscape, sea"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: prepositional phrase",
+        "a2": "prepositional phrase"
+      },
+      {
+        "s3": "Step 3. Generate sentence: tropical landscape of palm trees with sea in the background on the island .",
+        "a3": "tropical landscape of palm trees with sea in the background on the island ."
+      },
+      {
+        "s4": "Final Answer: tropical landscape of palm trees with sea in the background on the island .",
+        "a4": "tropical landscape of palm trees with sea in the background on the island ."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: island, landscape, sea",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: island, landscape, sea",
+        "a1": "island, landscape, sea"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: isometric landscape representing lighthouse on the small island near the sea .",
+        "a3": "isometric landscape representing lighthouse on the small island near the sea ."
+      },
+      {
+        "s4": "Final Answer: isometric landscape representing lighthouse on the small island near the sea .",
+        "a4": "isometric landscape representing lighthouse on the small island near the sea ."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: clock, square, tower",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: clock, square, tower",
+        "a1": "clock, square, tower"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: clock tower on the square",
+        "a3": "clock tower on the square"
+      },
+      {
+        "s4": "Final Answer: clock tower on the square",
+        "a4": "clock tower on the square"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: clock, square, tower",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: clock, square, tower",
+        "a1": "clock, square, tower"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: clock tower from the main square",
+        "a3": "clock tower from the main square"
+      },
+      {
+        "s4": "Final Answer: clock tower from the main square",
+        "a4": "clock tower from the main square"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: clock, square, tower",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: clock, square, tower",
+        "a1": "clock, square, tower"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: clock tower on top of the historic market square",
+        "a3": "clock tower on top of the historic market square"
+      },
+      {
+        "s4": "Final Answer: clock tower on top of the historic market square",
+        "a4": "clock tower on top of the historic market square"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: display, model, museum",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: display, model, museum",
+        "a1": "display, model, museum"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: older model on display at the museum",
+        "a3": "older model on display at the museum"
+      },
+      {
+        "s4": "Final Answer: older model on display at the museum",
+        "a4": "older model on display at the museum"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: display, model, museum",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: display, model, museum",
+        "a1": "display, model, museum"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: display of troops preparing to board aircraft model at museum",
+        "a3": "display of troops preparing to board aircraft model at museum"
+      },
+      {
+        "s4": "Final Answer: display of troops preparing to board aircraft model at museum",
+        "a4": "display of troops preparing to board aircraft model at museum"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: cattle, graze, hillside",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: cattle, graze, hillside",
+        "a1": "cattle, graze, hillside"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: Two cattle grazing on a lush green hillside.",
+        "a3": "Two cattle grazing on a lush green hillside."
+      },
+      {
+        "s4": "Final Answer: Two cattle grazing on a lush green hillside.",
+        "a4": "Two cattle grazing on a lush green hillside."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: cattle, graze, hillside",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: cattle, graze, hillside",
+        "a1": "cattle, graze, hillside"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: view of cattle grazing on an idyllic hillside",
+        "a3": "view of cattle grazing on an idyllic hillside"
+      },
+      {
+        "s4": "Final Answer: view of cattle grazing on an idyllic hillside",
+        "a4": "view of cattle grazing on an idyllic hillside"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: cattle, graze, hillside",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: cattle, graze, hillside",
+        "a1": "cattle, graze, hillside"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: clouds fill the sky above a hillside where cattle are grazing",
+        "a3": "clouds fill the sky above a hillside where cattle are grazing"
+      },
+      {
+        "s4": "Final Answer: clouds fill the sky above a hillside where cattle are grazing",
+        "a4": "clouds fill the sky above a hillside where cattle are grazing"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: monitor, mouse, television",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: monitor, mouse, television",
+        "a1": "monitor, mouse, television"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A computer monitor, keyboard, mouse and television at a desk.",
+        "a3": "A computer monitor, keyboard, mouse and television at a desk."
+      },
+      {
+        "s4": "Final Answer: A computer monitor, keyboard, mouse and television at a desk.",
+        "a4": "A computer monitor, keyboard, mouse and television at a desk."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: barn, farm, kitten",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: barn, farm, kitten",
+        "a1": "barn, farm, kitten"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: young kitten outside a barn on a farm",
+        "a3": "young kitten outside a barn on a farm"
+      },
+      {
+        "s4": "Final Answer: young kitten outside a barn on a farm",
+        "a4": "young kitten outside a barn on a farm"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: cattle, herd, lake",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: cattle, herd, lake",
+        "a1": "cattle, herd, lake"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A herd of cattle are grazing around a small lake.",
+        "a3": "A herd of cattle are grazing around a small lake."
+      },
+      {
+        "s4": "Final Answer: A herd of cattle are grazing around a small lake.",
+        "a4": "A herd of cattle are grazing around a small lake."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: foreground, giraffe, zebra",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: foreground, giraffe, zebra",
+        "a1": "foreground, giraffe, zebra"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A giraffe in the foreground and zebra grazing in the back.",
+        "a3": "A giraffe in the foreground and zebra grazing in the back."
+      },
+      {
+        "s4": "Final Answer: A giraffe in the foreground and zebra grazing in the back.",
+        "a4": "A giraffe in the foreground and zebra grazing in the back."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: foreground, giraffe, zebra",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: foreground, giraffe, zebra",
+        "a1": "foreground, giraffe, zebra"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: The back end of several zebras can be seen in the foreground of a scene also featuring giraffes.",
+        "a3": "The back end of several zebras can be seen in the foreground of a scene also featuring giraffes."
+      },
+      {
+        "s4": "Final Answer: The back end of several zebras can be seen in the foreground of a scene also featuring giraffes.",
+        "a4": "The back end of several zebras can be seen in the foreground of a scene also featuring giraffes."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: display, sale, stall",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: display, sale, stall",
+        "a1": "display, sale, stall"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: fresh vegetables displayed for sale on a market stall",
+        "a3": "fresh vegetables displayed for sale on a market stall"
+      },
+      {
+        "s4": "Final Answer: fresh vegetables displayed for sale on a market stall",
+        "a4": "fresh vegetables displayed for sale on a market stall"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: display, sale, stall",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: display, sale, stall",
+        "a1": "display, sale, stall"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: handmade candles displayed for sale at the stall during the market .",
+        "a3": "handmade candles displayed for sale at the stall during the market ."
+      },
+      {
+        "s4": "Final Answer: handmade candles displayed for sale at the stall during the market .",
+        "a4": "handmade candles displayed for sale at the stall during the market ."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: broccoli, pizza, tomato",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: broccoli, pizza, tomato",
+        "a1": "broccoli, pizza, tomato"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: The pizza is made with broccoli and tomatoes.",
+        "a3": "The pizza is made with broccoli and tomatoes."
+      },
+      {
+        "s4": "Final Answer: The pizza is made with broccoli and tomatoes.",
+        "a4": "The pizza is made with broccoli and tomatoes."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: apartment, balcony, hotel",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: apartment, balcony, hotel",
+        "a1": "apartment, balcony, hotel"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: prepositional phrase",
+        "a2": "prepositional phrase"
+      },
+      {
+        "s3": "Step 3. Generate sentence: the balcony of an apartment of hotel with sea view",
+        "a3": "the balcony of an apartment of hotel with sea view"
+      },
+      {
+        "s4": "Final Answer: the balcony of an apartment of hotel with sea view",
+        "a4": "the balcony of an apartment of hotel with sea view"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: apartment, balcony, hotel",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: apartment, balcony, hotel",
+        "a1": "apartment, balcony, hotel"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: prepositional phrase",
+        "a2": "prepositional phrase"
+      },
+      {
+        "s3": "Step 3. Generate sentence: block of apartments with balconies in a large hotel",
+        "a3": "block of apartments with balconies in a large hotel"
+      },
+      {
+        "s4": "Final Answer: block of apartments with balconies in a large hotel",
+        "a4": "block of apartments with balconies in a large hotel"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: apartment, balcony, hotel",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: apartment, balcony, hotel",
+        "a1": "apartment, balcony, hotel"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: attractive couple in hotel or apartment go onto the balcony to look at the view",
+        "a3": "attractive couple in hotel or apartment go onto the balcony to look at the view"
+      },
+      {
+        "s4": "Final Answer: attractive couple in hotel or apartment go onto the balcony to look at the view",
+        "a4": "attractive couple in hotel or apartment go onto the balcony to look at the view"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: garden, lake, summer",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: garden, lake, summer",
+        "a1": "garden, lake, summer"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: summer on a lake in the summer garden",
+        "a3": "summer on a lake in the summer garden"
+      },
+      {
+        "s4": "Final Answer: summer on a lake in the summer garden",
+        "a4": "summer on a lake in the summer garden"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: garden, lake, summer",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: garden, lake, summer",
+        "a1": "garden, lake, summer"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: prepositional phrase",
+        "a2": "prepositional phrase"
+      },
+      {
+        "s3": "Step 3. Generate sentence: a large ornamental pond or small lake with a rustic wooden bridge in a country garden in summer",
+        "a3": "a large ornamental pond or small lake with a rustic wooden bridge in a country garden in summer"
+      },
+      {
+        "s4": "Final Answer: a large ornamental pond or small lake with a rustic wooden bridge in a country garden in summer",
+        "a4": "a large ornamental pond or small lake with a rustic wooden bridge in a country garden in summer"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: farm, hay, island",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: farm, hay, island",
+        "a1": "farm, hay, island"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: cute donkeys eating hay on a farm on island",
+        "a3": "cute donkeys eating hay on a farm on island"
+      },
+      {
+        "s4": "Final Answer: cute donkeys eating hay on a farm on island",
+        "a4": "cute donkeys eating hay on a farm on island"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: airplane, airport, luggage",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: airplane, airport, luggage",
+        "a1": "airplane, airport, luggage"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: loading cargo or luggage into airplane at airport on a cloudy day",
+        "a3": "loading cargo or luggage into airplane at airport on a cloudy day"
+      },
+      {
+        "s4": "Final Answer: loading cargo or luggage into airplane at airport on a cloudy day",
+        "a4": "loading cargo or luggage into airplane at airport on a cloudy day"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: airplane, airport, luggage",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: airplane, airport, luggage",
+        "a1": "airplane, airport, luggage"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: prepositional phrase",
+        "a2": "prepositional phrase"
+      },
+      {
+        "s3": "Step 3. Generate sentence: businessman with luggage in airport looking at airplane in the sky .",
+        "a3": "businessman with luggage in airport looking at airplane in the sky ."
+      },
+      {
+        "s4": "Final Answer: businessman with luggage in airport looking at airplane in the sky .",
+        "a4": "businessman with luggage in airport looking at airplane in the sky ."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: airplane, airport, luggage",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: airplane, airport, luggage",
+        "a1": "airplane, airport, luggage"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: Three airplanes are standing on the airport, passengers and luggage in cars. ",
+        "a3": "Three airplanes are standing on the airport, passengers and luggage in cars. "
+      },
+      {
+        "s4": "Final Answer: Three airplanes are standing on the airport, passengers and luggage in cars. ",
+        "a4": "Three airplanes are standing on the airport, passengers and luggage in cars. "
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: keyboard, monitor, telephone",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: keyboard, monitor, telephone",
+        "a1": "keyboard, monitor, telephone"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A desk with a monitor, keyboard and telephone on it. ",
+        "a3": "A desk with a monitor, keyboard and telephone on it. "
+      },
+      {
+        "s4": "Final Answer: A desk with a monitor, keyboard and telephone on it. ",
+        "a4": "A desk with a monitor, keyboard and telephone on it. "
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: chocolate, sale, stall",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: chocolate, sale, stall",
+        "a1": "chocolate, sale, stall"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: chocolates for sale at a small stall",
+        "a3": "chocolates for sale at a small stall"
+      },
+      {
+        "s4": "Final Answer: chocolates for sale at a small stall",
+        "a4": "chocolates for sale at a small stall"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: model, own, sale",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: model, own, sale",
+        "a1": "model, own, sale"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: celebrity once owned automobile model which is now for sale .",
+        "a3": "celebrity once owned automobile model which is now for sale ."
+      },
+      {
+        "s4": "Final Answer: celebrity once owned automobile model which is now for sale .",
+        "a4": "celebrity once owned automobile model which is now for sale ."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: model, own, sale",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: model, own, sale",
+        "a1": "model, own, sale"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: automobile model owned by organization leader is displayed during a media preview for the sale .",
+        "a3": "automobile model owned by organization leader is displayed during a media preview for the sale ."
+      },
+      {
+        "s4": "Final Answer: automobile model owned by organization leader is displayed during a media preview for the sale .",
+        "a4": "automobile model owned by organization leader is displayed during a media preview for the sale ."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: clock, sculpture, tower",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: clock, sculpture, tower",
+        "a1": "clock, sculpture, tower"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: prepositional phrase",
+        "a2": "prepositional phrase"
+      },
+      {
+        "s3": "Step 3. Generate sentence: a large clock tower with sculptures around the clock",
+        "a3": "a large clock tower with sculptures around the clock"
+      },
+      {
+        "s4": "Final Answer: a large clock tower with sculptures around the clock",
+        "a4": "a large clock tower with sculptures around the clock"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: foreground, garden, structure",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: foreground, garden, structure",
+        "a1": "foreground, garden, structure"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: prepositional phrase",
+        "a2": "prepositional phrase"
+      },
+      {
+        "s3": "Step 3. Generate sentence: renaissance structure with gardens in the foreground .",
+        "a3": "renaissance structure with gardens in the foreground ."
+      },
+      {
+        "s4": "Final Answer: renaissance structure with gardens in the foreground .",
+        "a4": "renaissance structure with gardens in the foreground ."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: broccoli, container, rice",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: broccoli, container, rice",
+        "a1": "broccoli, container, rice"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: Two pink containers show rice and broccoli inside.",
+        "a3": "Two pink containers show rice and broccoli inside."
+      },
+      {
+        "s4": "Final Answer: Two pink containers show rice and broccoli inside.",
+        "a4": "Two pink containers show rice and broccoli inside."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: broccoli, container, rice",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: broccoli, container, rice",
+        "a1": "broccoli, container, rice"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: food assorted in a plastic container with rice and broccoli",
+        "a3": "food assorted in a plastic container with rice and broccoli"
+      },
+      {
+        "s4": "Final Answer: food assorted in a plastic container with rice and broccoli",
+        "a4": "food assorted in a plastic container with rice and broccoli"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: broccoli, container, rice",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: broccoli, container, rice",
+        "a1": "broccoli, container, rice"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A container of broccoli, chicken, and other foods is next to a container of rice.",
+        "a3": "A container of broccoli, chicken, and other foods is next to a container of rice."
+      },
+      {
+        "s4": "Final Answer: A container of broccoli, chicken, and other foods is next to a container of rice.",
+        "a4": "A container of broccoli, chicken, and other foods is next to a container of rice."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: cattle, herd, zebra",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: cattle, herd, zebra",
+        "a1": "cattle, herd, zebra"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A zebra and a herd of cattle near a watering hole.",
+        "a3": "A zebra and a herd of cattle near a watering hole."
+      },
+      {
+        "s4": "Final Answer: A zebra and a herd of cattle near a watering hole.",
+        "a4": "A zebra and a herd of cattle near a watering hole."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: cabinet, microwave, reflection",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: cabinet, microwave, reflection",
+        "a1": "cabinet, microwave, reflection"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A reflection of a kitchen microwave and cabinets.",
+        "a3": "A reflection of a kitchen microwave and cabinets."
+      },
+      {
+        "s4": "Final Answer: A reflection of a kitchen microwave and cabinets.",
+        "a4": "A reflection of a kitchen microwave and cabinets."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: cabinet, microwave, reflection",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: cabinet, microwave, reflection",
+        "a1": "cabinet, microwave, reflection"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: The reflection in the mirror shows a microwave on a kitchen cabinet.",
+        "a3": "The reflection in the mirror shows a microwave on a kitchen cabinet."
+      },
+      {
+        "s4": "Final Answer: The reflection in the mirror shows a microwave on a kitchen cabinet.",
+        "a4": "The reflection in the mirror shows a microwave on a kitchen cabinet."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: enclosure, giraffe, zoo",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: enclosure, giraffe, zoo",
+        "a1": "enclosure, giraffe, zoo"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A giraffe at the zoo in an enclosure ",
+        "a3": "A giraffe at the zoo in an enclosure "
+      },
+      {
+        "s4": "Final Answer: A giraffe at the zoo in an enclosure ",
+        "a4": "A giraffe at the zoo in an enclosure "
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: enclosure, giraffe, zoo",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: enclosure, giraffe, zoo",
+        "a1": "enclosure, giraffe, zoo"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: Two giraffes in an enclosure in some type of zoo.",
+        "a3": "Two giraffes in an enclosure in some type of zoo."
+      },
+      {
+        "s4": "Final Answer: Two giraffes in an enclosure in some type of zoo.",
+        "a4": "Two giraffes in an enclosure in some type of zoo."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: enclosure, giraffe, zoo",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: enclosure, giraffe, zoo",
+        "a1": "enclosure, giraffe, zoo"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: Several giraffes wander around their enclosure at the zoo.",
+        "a3": "Several giraffes wander around their enclosure at the zoo."
+      },
+      {
+        "s4": "Final Answer: Several giraffes wander around their enclosure at the zoo.",
+        "a4": "Several giraffes wander around their enclosure at the zoo."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: festival, part, ship",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: festival, part, ship",
+        "a1": "festival, part, ship"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: ship in historic docks as part of festival",
+        "a3": "ship in historic docks as part of festival"
+      },
+      {
+        "s4": "Final Answer: ship in historic docks as part of festival",
+        "a4": "ship in historic docks as part of festival"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: airplane, airport, runway",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: airplane, airport, runway",
+        "a1": "airplane, airport, runway"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: airplanes and runways at an airport",
+        "a3": "airplanes and runways at an airport"
+      },
+      {
+        "s4": "Final Answer: airplanes and runways at an airport",
+        "a4": "airplanes and runways at an airport"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: airplane, airport, runway",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: airplane, airport, runway",
+        "a1": "airplane, airport, runway"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: airplane on the sandy runway of airport",
+        "a3": "airplane on the sandy runway of airport"
+      },
+      {
+        "s4": "Final Answer: airplane on the sandy runway of airport",
+        "a4": "airplane on the sandy runway of airport"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: airplane, airport, runway",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: airplane, airport, runway",
+        "a1": "airplane, airport, runway"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: An airplane sits on a runway in a airport",
+        "a3": "An airplane sits on a runway in a airport"
+      },
+      {
+        "s4": "Final Answer: An airplane sits on a runway in a airport",
+        "a4": "An airplane sits on a runway in a airport"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: closeup, pizza, tomato",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: closeup, pizza, tomato",
+        "a1": "closeup, pizza, tomato"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: prepositional phrase",
+        "a2": "prepositional phrase"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A closeup of a pizza with small tomatoes on it ",
+        "a3": "A closeup of a pizza with small tomatoes on it "
+      },
+      {
+        "s4": "Final Answer: A closeup of a pizza with small tomatoes on it ",
+        "a4": "A closeup of a pizza with small tomatoes on it "
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: broccoli, cheese, salad",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: broccoli, cheese, salad",
+        "a1": "broccoli, cheese, salad"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A salad with broccoli, cheese and radishes is in a bowl.",
+        "a3": "A salad with broccoli, cheese and radishes is in a bowl."
+      },
+      {
+        "s4": "Final Answer: A salad with broccoli, cheese and radishes is in a bowl.",
+        "a4": "A salad with broccoli, cheese and radishes is in a bowl."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: business, model, own",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: business, model, own",
+        "a1": "business, model, own"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: automobile model is owned by business and was raced by olympic athlete",
+        "a3": "automobile model is owned by business and was raced by olympic athlete"
+      },
+      {
+        "s4": "Final Answer: automobile model is owned by business and was raced by olympic athlete",
+        "a4": "automobile model is owned by business and was raced by olympic athlete"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: business, model, own",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: business, model, own",
+        "a1": "business, model, own"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: automobile model owned by automotive industry business racing up the hill at festival",
+        "a3": "automobile model owned by automotive industry business racing up the hill at festival"
+      },
+      {
+        "s4": "Final Answer: automobile model owned by automotive industry business racing up the hill at festival",
+        "a4": "automobile model owned by automotive industry business racing up the hill at festival"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: apartment, garden, sale",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: apartment, garden, sale",
+        "a1": "apartment, garden, sale"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: terrace and garden of the apartment for sale",
+        "a3": "terrace and garden of the apartment for sale"
+      },
+      {
+        "s4": "Final Answer: terrace and garden of the apartment for sale",
+        "a4": "terrace and garden of the apartment for sale"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: barn, hay, herd",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: barn, hay, herd",
+        "a1": "barn, hay, herd"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A herd of cows eating hay near a barn",
+        "a3": "A herd of cows eating hay near a barn"
+      },
+      {
+        "s4": "Final Answer: A herd of cows eating hay near a barn",
+        "a4": "A herd of cows eating hay near a barn"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: lawn, museum, picnic",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: lawn, museum, picnic",
+        "a1": "lawn, museum, picnic"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: the museum and people picnicking on the lawn in park",
+        "a3": "the museum and people picnicking on the lawn in park"
+      },
+      {
+        "s4": "Final Answer: the museum and people picnicking on the lawn in park",
+        "a4": "the museum and people picnicking on the lawn in park"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: display, sale, shelf",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: display, sale, shelf",
+        "a1": "display, sale, shelf"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: bottles of milk displayed for sale on a supermarket shelf",
+        "a3": "bottles of milk displayed for sale on a supermarket shelf"
+      },
+      {
+        "s4": "Final Answer: bottles of milk displayed for sale on a supermarket shelf",
+        "a4": "bottles of milk displayed for sale on a supermarket shelf"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: reflection, sea, town",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: reflection, sea, town",
+        "a1": "reflection, sea, town"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: reflections on boat a beautiful town by the sea",
+        "a3": "reflections on boat a beautiful town by the sea"
+      },
+      {
+        "s4": "Final Answer: reflections on boat a beautiful town by the sea",
+        "a4": "reflections on boat a beautiful town by the sea"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: reflection, sea, town",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: reflection, sea, town",
+        "a1": "reflection, sea, town"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: reflections from ships wake in the sea near the town",
+        "a3": "reflections from ships wake in the sea near the town"
+      },
+      {
+        "s4": "Final Answer: reflections from ships wake in the sea near the town",
+        "a4": "reflections from ships wake in the sea near the town"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: model, part, runway, summer",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: model, part, runway, summer",
+        "a1": "model, part, runway, summer"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: a model walks the runway during fashion show as part of summer .",
+        "a3": "a model walks the runway during fashion show as part of summer ."
+      },
+      {
+        "s4": "Final Answer: a model walks the runway during fashion show as part of summer .",
+        "a4": "a model walks the runway during fashion show as part of summer ."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: enclosure, giraffe, hay",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: enclosure, giraffe, hay",
+        "a1": "enclosure, giraffe, hay"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: Five giraffes eating hay in a zoo enclosure.",
+        "a3": "Five giraffes eating hay in a zoo enclosure."
+      },
+      {
+        "s4": "Final Answer: Five giraffes eating hay in a zoo enclosure.",
+        "a4": "Five giraffes eating hay in a zoo enclosure."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: enclosure, giraffe, hay",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: enclosure, giraffe, hay",
+        "a1": "enclosure, giraffe, hay"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: prepositional phrase",
+        "a2": "prepositional phrase"
+      },
+      {
+        "s3": "Step 3. Generate sentence: Five giraffes in an enclosure with hay on the floor.",
+        "a3": "Five giraffes in an enclosure with hay on the floor."
+      },
+      {
+        "s4": "Final Answer: Five giraffes in an enclosure with hay on the floor.",
+        "a4": "Five giraffes in an enclosure with hay on the floor."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: enclosure, giraffe, hay",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: enclosure, giraffe, hay",
+        "a1": "enclosure, giraffe, hay"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A giraffe and two deer in a fenced enclosure feeding on hay.",
+        "a3": "A giraffe and two deer in a fenced enclosure feeding on hay."
+      },
+      {
+        "s4": "Final Answer: A giraffe and two deer in a fenced enclosure feeding on hay.",
+        "a4": "A giraffe and two deer in a fenced enclosure feeding on hay."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: giraffe, hay, zebra",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: giraffe, hay, zebra",
+        "a1": "giraffe, hay, zebra"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A giraffe and a small herd of zebra eat hay.",
+        "a3": "A giraffe and a small herd of zebra eat hay."
+      },
+      {
+        "s4": "Final Answer: A giraffe and a small herd of zebra eat hay.",
+        "a4": "A giraffe and a small herd of zebra eat hay."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: giraffe, hay, zebra",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: giraffe, hay, zebra",
+        "a1": "giraffe, hay, zebra"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: prepositional phrase",
+        "a2": "prepositional phrase"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A giraffe eating hay with two zebras near by.",
+        "a3": "A giraffe eating hay with two zebras near by."
+      },
+      {
+        "s4": "Final Answer: A giraffe eating hay with two zebras near by.",
+        "a4": "A giraffe eating hay with two zebras near by."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: apartment, balcony, breakfast",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: apartment, balcony, breakfast",
+        "a1": "apartment, balcony, breakfast"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: breakfast on the balcony of an apartment",
+        "a3": "breakfast on the balcony of an apartment"
+      },
+      {
+        "s4": "Final Answer: breakfast on the balcony of an apartment",
+        "a4": "breakfast on the balcony of an apartment"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: airport, passenger, walkway",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: airport, passenger, walkway",
+        "a1": "airport, passenger, walkway"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: passengers on a moving walkway at an airport",
+        "a3": "passengers on a moving walkway at an airport"
+      },
+      {
+        "s4": "Final Answer: passengers on a moving walkway at an airport",
+        "a4": "passengers on a moving walkway at an airport"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: grazing, pasture, zebra",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: grazing, pasture, zebra",
+        "a1": "grazing, pasture, zebra"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A zebra and a young zebra grazing in a grassy pasture.",
+        "a3": "A zebra and a young zebra grazing in a grassy pasture."
+      },
+      {
+        "s4": "Final Answer: A zebra and a young zebra grazing in a grassy pasture.",
+        "a4": "A zebra and a young zebra grazing in a grassy pasture."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: grazing, pasture, zebra",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: grazing, pasture, zebra",
+        "a1": "grazing, pasture, zebra"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: The zebras are standing around and grazing in the pasture.",
+        "a3": "The zebras are standing around and grazing in the pasture."
+      },
+      {
+        "s4": "Final Answer: The zebras are standing around and grazing in the pasture.",
+        "a4": "The zebras are standing around and grazing in the pasture."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: clock, display, post",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: clock, display, post",
+        "a1": "clock, display, post"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: The post on the street has a clock displayed. ",
+        "a3": "The post on the street has a clock displayed. "
+      },
+      {
+        "s4": "Final Answer: The post on the street has a clock displayed. ",
+        "a4": "The post on the street has a clock displayed. "
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: clock, display, post",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: clock, display, post",
+        "a1": "clock, display, post"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: Clock on post displayed in brightly lit covered space.",
+        "a3": "Clock on post displayed in brightly lit covered space."
+      },
+      {
+        "s4": "Final Answer: Clock on post displayed in brightly lit covered space.",
+        "a4": "Clock on post displayed in brightly lit covered space."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: clock, display, post",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: clock, display, post",
+        "a1": "clock, display, post"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: Large clock on post displayed near overhead display of commercial enterprise.",
+        "a3": "Large clock on post displayed near overhead display of commercial enterprise."
+      },
+      {
+        "s4": "Final Answer: Large clock on post displayed near overhead display of commercial enterprise.",
+        "a4": "Large clock on post displayed near overhead display of commercial enterprise."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: clock, display, round",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: clock, display, round",
+        "a1": "clock, display, round"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: clock is displayed during a practice round",
+        "a3": "clock is displayed during a practice round"
+      },
+      {
+        "s4": "Final Answer: clock is displayed during a practice round",
+        "a4": "clock is displayed during a practice round"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: cheese, chicken, tomato",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: cheese, chicken, tomato",
+        "a1": "cheese, chicken, tomato"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A pizza with cheese, spinach, tomatoes and chicken.",
+        "a3": "A pizza with cheese, spinach, tomatoes and chicken."
+      },
+      {
+        "s4": "Final Answer: A pizza with cheese, spinach, tomatoes and chicken.",
+        "a4": "A pizza with cheese, spinach, tomatoes and chicken."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: cheese, chicken, tomato",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: cheese, chicken, tomato",
+        "a1": "cheese, chicken, tomato"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: The sandwich has chicken, melted cheese, and tomato inside.",
+        "a3": "The sandwich has chicken, melted cheese, and tomato inside."
+      },
+      {
+        "s4": "Final Answer: The sandwich has chicken, melted cheese, and tomato inside.",
+        "a4": "The sandwich has chicken, melted cheese, and tomato inside."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: display, donut, sale, variety",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: display, donut, sale, variety",
+        "a1": "display, donut, sale, variety"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: Many different varieties of donuts are displayed for sale.",
+        "a3": "Many different varieties of donuts are displayed for sale."
+      },
+      {
+        "s4": "Final Answer: Many different varieties of donuts are displayed for sale.",
+        "a4": "Many different varieties of donuts are displayed for sale."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: lap, left, party",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: lap, left, party",
+        "a1": "lap, left, party"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A man at a party with one woman on his lap and two women sitting to his left",
+        "a3": "A man at a party with one woman on his lap and two women sitting to his left"
+      },
+      {
+        "s4": "Final Answer: A man at a party with one woman on his lap and two women sitting to his left",
+        "a4": "A man at a party with one woman on his lap and two women sitting to his left"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: bow, sea, ship",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: bow, sea, ship",
+        "a1": "bow, sea, ship"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: simple declarative",
+        "a2": "simple declarative"
+      },
+      {
+        "s3": "Step 3. Generate sentence: ships bow moving through the sea",
+        "a3": "ships bow moving through the sea"
+      },
+      {
+        "s4": "Final Answer: ships bow moving through the sea",
+        "a4": "ships bow moving through the sea"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: bow, sea, ship",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: bow, sea, ship",
+        "a1": "bow, sea, ship"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: wave pattern of ships bow wave in the sea",
+        "a3": "wave pattern of ships bow wave in the sea"
+      },
+      {
+        "s4": "Final Answer: wave pattern of ships bow wave in the sea",
+        "a4": "wave pattern of ships bow wave in the sea"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: bank, lake, summer",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: bank, lake, summer",
+        "a1": "bank, lake, summer"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: trees on a grassy bank by a lake in summer",
+        "a3": "trees on a grassy bank by a lake in summer"
+      },
+      {
+        "s4": "Final Answer: trees on a grassy bank by a lake in summer",
+        "a4": "trees on a grassy bank by a lake in summer"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: bank, lake, summer",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: bank, lake, summer",
+        "a1": "bank, lake, summer"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: small swedish village on the bank of calm lake in summer",
+        "a3": "small swedish village on the bank of calm lake in summer"
+      },
+      {
+        "s4": "Final Answer: small swedish village on the bank of calm lake in summer",
+        "a4": "small swedish village on the bank of calm lake in summer"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: bank, lake, summer",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: bank, lake, summer",
+        "a1": "bank, lake, summer"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: location description",
+        "a2": "location description"
+      },
+      {
+        "s3": "Step 3. Generate sentence: traditional russian old wooden bath at the bank of lake in summer",
+        "a3": "traditional russian old wooden bath at the bank of lake in summer"
+      },
+      {
+        "s4": "Final Answer: traditional russian old wooden bath at the bank of lake in summer",
+        "a4": "traditional russian old wooden bath at the bank of lake in summer"
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: controller, keyboard, mouse",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: controller, keyboard, mouse",
+        "a1": "controller, keyboard, mouse"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A keyboard, mouse, and controller siting on a black table. ",
+        "a3": "A keyboard, mouse, and controller siting on a black table. "
+      },
+      {
+        "s4": "Final Answer: A keyboard, mouse, and controller siting on a black table. ",
+        "a4": "A keyboard, mouse, and controller siting on a black table. "
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: cheese, pizza, sauce",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: cheese, pizza, sauce",
+        "a1": "cheese, pizza, sauce"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A plate of pizza with cheese and sauce.",
+        "a3": "A plate of pizza with cheese and sauce."
+      },
+      {
+        "s4": "Final Answer: A plate of pizza with cheese and sauce.",
+        "a4": "A plate of pizza with cheese and sauce."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: cheese, pizza, sauce",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: cheese, pizza, sauce",
+        "a1": "cheese, pizza, sauce"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: prepositional phrase",
+        "a2": "prepositional phrase"
+      },
+      {
+        "s3": "Step 3. Generate sentence: A pizza with cheese has white sauce on it.",
+        "a3": "A pizza with cheese has white sauce on it."
+      },
+      {
+        "s4": "Final Answer: A pizza with cheese has white sauce on it.",
+        "a4": "A pizza with cheese has white sauce on it."
+      }
+    ]
+  },
+  {
+    "question": "Create a natural sentence incorporating: cheese, pizza, sauce",
+    "is_expert": true,
+    "steps": [
+      {
+        "s1": "Step 1. Identify required concepts: cheese, pizza, sauce",
+        "a1": "cheese, pizza, sauce"
+      },
+      {
+        "s2": "Step 2. Plan sentence pattern: coordination structure",
+        "a2": "coordination structure"
+      },
+      {
+        "s3": "Step 3. Generate sentence: Two large pizzas covered in sauce and cheese.",
+        "a3": "Two large pizzas covered in sauce and cheese."
+      },
+      {
+        "s4": "Final Answer: Two large pizzas covered in sauce and cheese.",
+        "a4": "Two large pizzas covered in sauce and cheese."
+      }
+    ]
+  }
+]

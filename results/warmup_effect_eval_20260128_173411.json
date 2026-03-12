@@ -1,0 +1,1986 @@
+{
+  "config": {
+    "model_path": "/home/zhoukaining/.cache/huggingface/models--Qwen2.5-7B-Instruct",
+    "data_path": "/home/zhoukaining/pro_cusor/GAIL_train/CommonGEN/data/data_commongenv/commongenv_cot_train_llm.json",
+    "adapter_path": "../checkpoints/sft_warmup/final_adapter",
+    "discriminator_head_path": "../checkpoints/discriminator_pretrained_gap0.9866.pt",
+    "max_length": 256,
+    "num_samples": 50,
+    "seed": 42,
+    "output_dir": "../results",
+    "max_new_tokens": 64,
+    "reward_mode": "hybrid",
+    "alpha_reward": 0.5,
+    "beta_reward": 0.3,
+    "gamma_reward": 0.2,
+    "hybrid_blend": 0.5
+  },
+  "baseline": {
+    "label": "no_warmup",
+    "summary": {
+      "reward": {
+        "mean": 0.7380490303039551,
+        "std": 0.04970643296837807,
+        "p50": 0.7332345247268677,
+        "p90": 0.8079054474830628
+      },
+      "expert_reward": {
+        "mean": 0.6860544681549072,
+        "std": 0.058959003537893295,
+        "p50": 0.6903359889984131,
+        "p90": 0.7620374739170075
+      },
+      "margin_expert_minus_gen": {
+        "mean": -0.05199456214904785,
+        "std": 0.04583034664392471,
+        "p50": -0.05506551265716553,
+        "p90": 0.003544008731842064
+      },
+      "coverage_mean": 1.0,
+      "step_count_mean": 2.38,
+      "step_marker_rate": 0.86,
+      "length_mean": 60.2,
+      "bigram_repeat_mean": 0.07855549182035908,
+      "degenerate_ratio_mean": 0.0
+    },
+    "samples": [
+      {
+        "question": "Generate a sentence with: barn, cattle, herd",
+        "concepts": [
+          "barn",
+          "cattle",
+          "herd"
+        ],
+        "gen_text": "Generate a sentence with: barn, cattle, herd",
+        "expert_text": "Generate a sentence with: barn, cattle, herd\nStep 1. Identify required concepts: barn, cattle, herd\nStep 2. Plan sentence pattern: A scenario where a group of cattle (herd) is being moved to or from a barn.\nStep 3. Generate sentence: The farmer guided the herd of cattle into the large barn for the night.\nFinal Answer: The farmer guided the herd of cattle into the large barn for the night.",
+        "coverage_ratio": 1.0,
+        "step_count": 0,
+        "step_marker": 0,
+        "length": 10,
+        "bigram_repeat_ratio": 0.0,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.727059543132782,
+        "expert_reward": 0.703523576259613,
+        "margin_expert_minus_gen": -0.023535966873168945
+      },
+      {
+        "question": "Generate a sentence with: design, poster, sale",
+        "concepts": [
+          "design",
+          "poster",
+          "sale"
+        ],
+        "gen_text": "Generate a sentence with: design, poster, sale\nStep 1. I need to incorporate the idea of design into the context of creating a poster for a sale.\nStep 2. The poster will be used for a merchandise clearance sale event organized by a clothing store.\nStep 3. To generate interest in the sale, the poster design should feature eye-catching graphics\nFinal Answer: 3",
+        "expert_text": "Generate a sentence with: design, poster, sale\nStep 1. Identify required concepts: design, poster, sale\nStep 2. Plan sentence pattern: A person or a group creates a design for a poster to advertise a sale.\nStep 3. Generate sentence: The marketing team designed an eye-catching poster to promote the upcoming weekend sale.\nFinal Answer: The marketing team designed an eye-catching poster to promote the upcoming weekend sale.",
+        "coverage_ratio": 1.0,
+        "step_count": 4,
+        "step_marker": 1,
+        "length": 80,
+        "bigram_repeat_ratio": 0.06329113924050633,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7202678918838501,
+        "expert_reward": 0.7104482054710388,
+        "margin_expert_minus_gen": -0.00981968641281128
+      },
+      {
+        "question": "Generate a sentence with: castle, cliff, sea",
+        "concepts": [
+          "castle",
+          "cliff",
+          "sea"
+        ],
+        "gen_text": "Generate a sentence with: castle, cliff, sea\nStep 1. Planning to integrate the given words into a single coherent sentence. castle + cliff + sea = The old stone castle perched on the edge of the precipice overlooked the vast ocean where waves crashed against the rocky shore.\nFinal Answer: The ol\nStep 1. Planning to integrate the given words into a single coherent sentence. castle + cliff + sea = The old stone castle perched on the edge of the precipice overlooked the vast ocean where waves crashed against the rocky shore.",
+        "expert_text": "Generate a sentence with: castle, cliff, sea\nStep 1. Identify required concepts: castle, cliff, sea\nStep 2. Plan sentence pattern: A castle is situated on a cliff that overlooks the sea. This structure creates a vivid image of a dramatic and picturesque setting, with the castle as the focal point.\nStep 3. Generate sentence: The ancient castle stands majestically on a rugged cliff, overlooking the vast and endless sea.\nFinal Answer: The ancient castle stands majestically on a rugged cliff, overlooking the vast and endless sea.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 111,
+        "bigram_repeat_ratio": 0.4181818181818182,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.5950720310211182,
+        "expert_reward": 0.6205732822418213,
+        "margin_expert_minus_gen": 0.025501251220703125
+      },
+      {
+        "question": "Generate a sentence with: passenger, sea, ship",
+        "concepts": [
+          "passenger",
+          "sea",
+          "ship"
+        ],
+        "gen_text": "Generate a sentence with: passenger, sea, ship\nStep 1. To create a sentence using the required elements, first considering the logical relationships among a passenger, a sea, and a ship. The phrase would need to indicate travel over the sea, with a passenger on a ship.\nStep 2. Comb\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: passenger, sea, ship\nStep 1. Identify required concepts: passenger, sea, ship\nStep 2. Plan sentence pattern: A passenger is on a ship that is sailing on the sea.\nStep 3. Generate sentence: The excited passenger stood on the deck of the ship as it sailed smoothly across the vast sea.\nFinal Answer: The excited passenger stood on the deck of the ship as it sailed smoothly across the vast sea.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 69,
+        "bigram_repeat_ratio": 0.11764705882352944,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7644697427749634,
+        "expert_reward": 0.6385000944137573,
+        "margin_expert_minus_gen": -0.12596964836120605
+      },
+      {
+        "question": "Generate a sentence with: airplane, engine, propeller",
+        "concepts": [
+          "airplane",
+          "engine",
+          "propeller"
+        ],
+        "gen_text": "Generate a sentence with: airplane, engine, propeller\nStep 1. [\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: airplane, engine, propeller\nStep 1. Identify required concepts: airplane, engine, propeller\nStep 2. Plan sentence pattern: The sentence will describe the relationship between the engine and the propeller of an airplane, highlighting how they work together to make the airplane function.\nStep 3. Generate sentence: The engine of the airplane powers the propeller, which in turn generates the thrust needed for flight.\nFinal Answer: The engine of the airplane powers the propeller, which in turn generates the thrust needed for flight.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 22,
+        "bigram_repeat_ratio": 0.04761904761904767,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7032197713851929,
+        "expert_reward": 0.6702343225479126,
+        "margin_expert_minus_gen": -0.03298544883728027
+      },
+      {
+        "question": "Generate a sentence with: aircraft, airport, runway",
+        "concepts": [
+          "aircraft",
+          "airport",
+          "runway"
+        ],
+        "gen_text": "Generate a sentence with: aircraft, airport, runway\nStep 1. Consider the situation of an aircraft needing to take off at an airport, and the usual process involves its movement along a runway before taking off into the sky.\nStep 2. The question seems to involve mentioning aircraft, airport, and runway in a single sentence. I will formulate a simple sentence that encaps\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: aircraft, airport, runway\nStep 1. Identify required concepts: aircraft, airport, runway\nStep 2. Plan sentence pattern: An aircraft is at an airport and it is using the runway for a specific action (e.g., taking off or landing).\nStep 3. Generate sentence: The aircraft taxied to the end of the runway at the busy airport, preparing for takeoff.\nFinal Answer: The aircraft taxied to the end of the runway at the busy airport, preparing for takeoff.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.08750000000000002,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7326762676239014,
+        "expert_reward": 0.6376925706863403,
+        "margin_expert_minus_gen": -0.09498369693756104
+      },
+      {
+        "question": "Generate a sentence with: love, shower, tile",
+        "concepts": [
+          "love",
+          "shower",
+          "tile"
+        ],
+        "gen_text": "Generate a sentence with: love, shower, tile\nStep 1. To create a sentence incorporating love, shower, and tile, I think about how these words might relate. One way to connect them is through describing someone enjoying\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: love, shower, tile\nStep 1. Identify required concepts: love, shower, tile\nStep 2. Plan sentence pattern: A person expresses their admiration for a specific aspect of a shower, which is the tiles.\nStep 3. Generate sentence: She loves the intricate design of the blue tiles in her newly renovated shower.\nFinal Answer: She loves the intricate design of the blue tiles in her newly renovated shower.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 52,
+        "bigram_repeat_ratio": 0.0980392156862745,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.787636399269104,
+        "expert_reward": 0.6979312300682068,
+        "margin_expert_minus_gen": -0.08970516920089722
+      },
+      {
+        "question": "Generate a sentence with: brother, garden, sister",
+        "concepts": [
+          "brother",
+          "garden",
+          "sister"
+        ],
+        "gen_text": "Generate a sentence with: brother, garden, sister",
+        "expert_text": "Generate a sentence with: brother, garden, sister\nStep 1. Identify required concepts: brother, garden, sister\nStep 2. Plan sentence pattern: The brother and sister are doing an activity together in the garden.\nStep 3. Generate sentence: The brother and sister are planting flowers together in their family garden.\nFinal Answer: The brother and sister are planting flowers together in their family garden.",
+        "coverage_ratio": 1.0,
+        "step_count": 0,
+        "step_marker": 0,
+        "length": 10,
+        "bigram_repeat_ratio": 0.0,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7134802341461182,
+        "expert_reward": 0.7957637310028076,
+        "margin_expert_minus_gen": 0.08228349685668945
+      },
+      {
+        "question": "Generate a sentence with: clock, display, post",
+        "concepts": [
+          "clock",
+          "display",
+          "post"
+        ],
+        "gen_text": "Generate a sentence with: clock, display, post\nStep 1. Understanding that a clock often has a display and a post could be something it is mounted on.\nStep 2. Formulating a sentence that incorporates these elements logically in a real-world context (a common scenario where a clock\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: clock, display, post\nStep 1. Identify required concepts: clock, display, post\nStep 2. Plan sentence pattern: A clock with a specific type of display is mounted or placed on a post.\nStep 3. Generate sentence: The digital clock with a bright LED display was mounted on the post at the bus stop.\nFinal Answer: The digital clock with a bright LED display was mounted on the post at the bus stop.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 65,
+        "bigram_repeat_ratio": 0.0625,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7513352632522583,
+        "expert_reward": 0.675251841545105,
+        "margin_expert_minus_gen": -0.07608342170715332
+      },
+      {
+        "question": "Generate a sentence with: evening, gown, model",
+        "concepts": [
+          "evening",
+          "gown",
+          "model"
+        ],
+        "gen_text": "Generate a sentence with: evening, gown, model\nStep 1. Start the sentence with 'In the evening' [In the evening]\nStep 2. Add a\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: evening, gown, model\nStep 1. Identify required concepts: evening, gown, model\nStep 2. Plan sentence pattern: A model is wearing an evening gown at a specific event or occasion.\nStep 3. Generate sentence: The elegant model walked down the runway in a stunning evening gown during the fashion show.\nFinal Answer: The elegant model walked down the runway in a stunning evening gown during the fashion show.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 41,
+        "bigram_repeat_ratio": 0.125,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.6599944829940796,
+        "expert_reward": 0.581871509552002,
+        "margin_expert_minus_gen": -0.07812297344207764
+      },
+      {
+        "question": "Generate a sentence with: display, exhibit, giraffe",
+        "concepts": [
+          "display",
+          "exhibit",
+          "giraffe"
+        ],
+        "gen_text": "Generate a sentence with: display, exhibit, giraffe\nStep 1. I need to include \"display,\" \"exhibit,\" and \"giraffe\" in a sentence about showcasing an animal.\nStep 2. \"The local zoo planned to display and exhibit a new giraffe for the month of August.\"\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: display, exhibit, giraffe\nStep 1. Identify required concepts: display, exhibit, giraffe\nStep 2. Plan sentence pattern: A setting where a giraffe is part of an exhibit or display, likely in a zoo or museum context.\nStep 3. Generate sentence: The zoo has set up a new exhibit to display the tall and graceful giraffe, attracting many visitors.\nFinal Answer: The zoo has set up a new exhibit to display the tall and graceful giraffe, attracting many visitors.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 69,
+        "bigram_repeat_ratio": 0.05882352941176472,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7104578018188477,
+        "expert_reward": 0.6833785772323608,
+        "margin_expert_minus_gen": -0.027079224586486816
+      },
+      {
+        "question": "Generate a sentence with: banner, cattle, herd",
+        "concepts": [
+          "banner",
+          "cattle",
+          "herd"
+        ],
+        "gen_text": "Generate a sentence with: banner, cattle, herd\nStep 1. The task requires integrating three nouns - a banner, cattle, and a herd - into a single descriptive sentence.\nStep 2. A common context where you'd find all three together could be a festive or agricultural setting.\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: banner, cattle, herd\nStep 1. Identify required concepts: banner, cattle, herd\nStep 2. Plan sentence pattern: A scenario where a banner is associated with a group of cattle (herd) in some way. The banner could be used to guide or identify the herd.\nStep 3. Generate sentence: The rancher hung a large banner over the gate to welcome the cattle as they herded through.\nFinal Answer: The rancher hung a large banner over the gate to welcome the cattle as they herded through.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 64,
+        "bigram_repeat_ratio": 0.07936507936507942,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7669951915740967,
+        "expert_reward": 0.7180004119873047,
+        "margin_expert_minus_gen": -0.04899477958679199
+      },
+      {
+        "question": "Generate a sentence with: country, lap, star",
+        "concepts": [
+          "country",
+          "lap",
+          "star"
+        ],
+        "gen_text": "Generate a sentence with: country, lap, star\nStep 1. To incorporate \"star\" in our sentence, let us build around a simple sentence that involves a star and references either a sport which often has laps, like swimming or track - \"country\" could then be used to specify which country this event refers to.\nStep 2. To structure the sentence co\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: country, lap, star\nStep 1. Identify required concepts: country, lap, star\nStep 2. Plan sentence pattern: A person from a specific country is sitting with a child on their lap, and they are looking at the stars.\nStep 3. Generate sentence: The woman from the small country sat with her child on her lap, gazing up at the bright star in the night sky.\nFinal Answer: The woman from the small country sat with her child on her lap, gazing up at the bright star in the night sky.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.03749999999999998,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.732707142829895,
+        "expert_reward": 0.6220035552978516,
+        "margin_expert_minus_gen": -0.11070358753204346
+      },
+      {
+        "question": "Generate a sentence with: collection, model, runway",
+        "concepts": [
+          "collection",
+          "model",
+          "runway"
+        ],
+        "gen_text": "Generate a sentence with: collection, model, runway\nStep 1. To create the sentence, I will select a key element from the prompt (collection) and combine it with relevant words for the sentence. \"Step 1. The subject will involve a collection, using '\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: collection, model, runway\nStep 1. Identify required concepts: collection, model, runway\nStep 2. Plan sentence pattern: A fashion context is suitable for these concepts. The sentence can describe a situation where a model is showcasing a collection on a runway.\nStep 3. Generate sentence: The model confidently walked down the runway, showcasing the latest designer collection.\nFinal Answer: The model confidently walked down the runway, showcasing the latest designer collection.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 61,
+        "bigram_repeat_ratio": 0.09999999999999998,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.740195631980896,
+        "expert_reward": 0.6332427859306335,
+        "margin_expert_minus_gen": -0.10695284605026245
+      },
+      {
+        "question": "Generate a sentence with: keyboard, mouse, part",
+        "concepts": [
+          "keyboard",
+          "mouse",
+          "part"
+        ],
+        "gen_text": "Generate a sentence with: keyboard, mouse, part\nStep 1. The sentence needs a subject performing an action related to 'keyboard' and 'mouse'. Jack wants to use the computer so he grabs his keyboard and mouse and sits down at his desk [keyboard, mouse, part].\nFinal Answer: keyboa\nStep 1. The sentence needs a subject performing an action related to 'keyboard' and 'mouse'. Jack wants to use the computer so he grabs his keyboard and mouse and sits down at his desk [keyboard, mouse, part].",
+        "expert_text": "Generate a sentence with: keyboard, mouse, part\nStep 1. Identify required concepts: keyboard, mouse, part\nStep 2. Plan sentence pattern: A sentence describing the relationship between a keyboard and a mouse as parts of a computer setup.\nStep 3. Generate sentence: The keyboard and mouse are essential parts of a typical desktop computer setup.\nFinal Answer: The keyboard and mouse are essential parts of a typical desktop computer setup.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 111,
+        "bigram_repeat_ratio": 0.44545454545454544,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7625943422317505,
+        "expert_reward": 0.8027414083480835,
+        "margin_expert_minus_gen": 0.04014706611633301
+      },
+      {
+        "question": "Generate a sentence with: airplane, airport, strip",
+        "concepts": [
+          "airplane",
+          "airport",
+          "strip"
+        ],
+        "gen_text": "Generate a sentence with: airplane, airport, strip\nStep 1. The sentence contains three key words that we want to incorporate: airplane, airport, and strip. We will need to use our imagination here as no direct information was given in the problem. Let's arrange the words in a sentence where they logically flow: An airplane departs from the airport followed by its\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: airplane, airport, strip\nStep 1. Identify required concepts: airplane, airport, strip\nStep 2. Plan sentence pattern: An airplane is at an airport and it is on or near a runway (strip). The sentence will describe the airplane's position in relation to the airport and the strip.\nStep 3. Generate sentence: The airplane is parked at the airport, ready for takeoff from the nearby strip.\nFinal Answer: The airplane is parked at the airport, ready for takeoff from the nearby strip.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.07499999999999996,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.740395188331604,
+        "expert_reward": 0.7003669738769531,
+        "margin_expert_minus_gen": -0.04002821445465088
+      },
+      {
+        "question": "Generate a sentence with: bun, hotdog, ketchup, mustard",
+        "concepts": [
+          "bun",
+          "hotdog",
+          "ketchup",
+          "mustard"
+        ],
+        "gen_text": "Generate a sentence with: bun, hotdog, ketchup, mustard\nStep 1. To understand what you will prepare, I need to think about how many hotdogs usually correspond to one bun. Typically, there is\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: bun, hotdog, ketchup, mustard\nStep 1. Identify required concepts: bun, hotdog, ketchup, mustard\nStep 2. Plan sentence pattern: A person prepares a hotdog by placing it in a bun and adding condiments (ketchup and mustard).\nStep 3. Generate sentence: The chef places the hotdog in a soft bun and then adds a generous amount of ketchup and mustard on top.\nFinal Answer: The chef places the hotdog in a soft bun and then adds a generous amount of ketchup and mustard on top.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 51,
+        "bigram_repeat_ratio": 0.020000000000000018,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.8283900022506714,
+        "expert_reward": 0.7155576348304749,
+        "margin_expert_minus_gen": -0.11283236742019653
+      },
+      {
+        "question": "Generate a sentence with: attention, brunette, focus",
+        "concepts": [
+          "attention",
+          "brunette",
+          "focus"
+        ],
+        "gen_text": "Generate a sentence with: attention, brunette, focus\nStep 1. To generate a relevant sentence, let's start with people having 'focus' and consider attributes like 'attention' and 'brunette.'\nStep 2. Combining all the words mentioned: focus, attention, brunette. Step\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: attention, brunette, focus\nStep 1. Identify required concepts: attention, brunette, focus\nStep 2. Plan sentence pattern: A brunette is trying to focus on a task but is having trouble due to distractions, which draws the attention of others.\nStep 3. Generate sentence: The brunette was struggling to focus on her work, and her obvious frustration began to draw the attention of her coworkers.\nFinal Answer: The brunette was struggling to focus on her work, and her obvious frustration began to draw the attention of her coworkers.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 67,
+        "bigram_repeat_ratio": 0.0757575757575758,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7064789533615112,
+        "expert_reward": 0.7530909776687622,
+        "margin_expert_minus_gen": 0.04661202430725098
+      },
+      {
+        "question": "Generate a sentence with: airport, luggage, travel",
+        "concepts": [
+          "airport",
+          "luggage",
+          "travel"
+        ],
+        "gen_text": "Generate a sentence with: airport, luggage, travel",
+        "expert_text": "Generate a sentence with: airport, luggage, travel\nStep 1. Identify required concepts: airport, luggage, travel\nStep 2. Plan sentence pattern: A person is at the airport with their luggage, preparing for a trip.\nStep 3. Generate sentence: At the bustling airport, Jane wheeled her luggage through the terminal, excited for her upcoming travel adventure.\nFinal Answer: At the bustling airport, Jane wheeled her luggage through the terminal, excited for her upcoming travel adventure.",
+        "coverage_ratio": 1.0,
+        "step_count": 0,
+        "step_marker": 0,
+        "length": 10,
+        "bigram_repeat_ratio": 0.0,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7175960540771484,
+        "expert_reward": 0.7195250988006592,
+        "margin_expert_minus_gen": 0.0019290447235107422
+      },
+      {
+        "question": "Generate a sentence with: graze, landscape, meadow",
+        "concepts": [
+          "graze",
+          "landscape",
+          "meadow"
+        ],
+        "gen_text": "Generate a sentence with: graze, landscape, meadow\nStep 1. Understanding what the problem describes. The problem mentions animals (cows) engaging in an activity (grazing) within a setting (meadow). No numerical or time-based calculation is present,\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: graze, landscape, meadow\nStep 1. Identify required concepts: graze, landscape, meadow\nStep 2. Plan sentence pattern: The sentence should describe a scene where animals are grazing in a meadow, which is part of a broader landscape.\nStep 3. Generate sentence: The cattle graze peacefully in the lush meadow, contributing to the serene and picturesque landscape.\nFinal Answer: The cattle graze peacefully in the lush meadow, contributing to the serene and picturesque landscape.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 60,
+        "bigram_repeat_ratio": 0.016949152542372836,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.777381956577301,
+        "expert_reward": 0.708462119102478,
+        "margin_expert_minus_gen": -0.068919837474823
+      },
+      {
+        "question": "Generate a sentence with: guard, round, tournament",
+        "concepts": [
+          "guard",
+          "round",
+          "tournament"
+        ],
+        "gen_text": "Generate a sentence with: guard, round, tournament\nStep 1. The instruction requires creating a single descriptive sentence. A simple and structured phrase could use the word 'guard' to refer to a security officer, 'round' to\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: guard, round, tournament\nStep 1. Identify required concepts: guard, round, tournament\nStep 2. Plan sentence pattern: A guard is involved in a specific round of a tournament, possibly providing security or overseeing the event.\nStep 3. Generate sentence: The security guard was assigned to oversee the final round of the chess tournament.\nFinal Answer: The security guard was assigned to oversee the final round of the chess tournament.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 53,
+        "bigram_repeat_ratio": 0.038461538461538436,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.8276790380477905,
+        "expert_reward": 0.7125964164733887,
+        "margin_expert_minus_gen": -0.11508262157440186
+      },
+      {
+        "question": "Generate a sentence with: sale, stack, stall",
+        "concepts": [
+          "sale",
+          "stack",
+          "stall"
+        ],
+        "gen_text": "Generate a sentence with: sale, stack, stall",
+        "expert_text": "Generate a sentence with: sale, stack, stall\nStep 1. Identify required concepts: sale, stack, stall\nStep 2. Plan sentence pattern: A vendor at a stall is organizing a sale where items are stacked.\nStep 3. Generate sentence: The vendor at the market stall is having a big sale, with neatly stacked items attracting many customers.\nFinal Answer: The vendor at the market stall is having a big sale, with neatly stacked items attracting many customers.",
+        "coverage_ratio": 1.0,
+        "step_count": 0,
+        "step_marker": 0,
+        "length": 10,
+        "bigram_repeat_ratio": 0.0,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7428855299949646,
+        "expert_reward": 0.6236931085586548,
+        "margin_expert_minus_gen": -0.11919242143630981
+      },
+      {
+        "question": "Generate a sentence with: clock, entrance, sculpture",
+        "concepts": [
+          "clock",
+          "entrance",
+          "sculpture"
+        ],
+        "gen_text": "Generate a sentence with: clock, entrance, sculpture\nStep 1. We need to create an appropriate sentence integrating all three words.\nStep 2. A clock at the entrance can be used to describe the time of visitors. A sculpture by the clock might be in some\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: clock, entrance, sculpture\nStep 1. Identify required concepts: clock, entrance, sculpture\nStep 2. Plan sentence pattern: A scenario where a person or people are at an entrance and notice a sculpture that includes or is near a clock.\nStep 3. Generate sentence: As visitors approached the grand entrance, they were greeted by an impressive sculpture with an intricately designed clock embedded in its center.\nFinal Answer: As visitors approached the grand entrance, they were greeted by an impressive sculpture with an intricately designed clock embedded in its center.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 61,
+        "bigram_repeat_ratio": 0.050000000000000044,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7924357652664185,
+        "expert_reward": 0.7741274237632751,
+        "margin_expert_minus_gen": -0.01830834150314331
+      },
+      {
+        "question": "Generate a sentence with: blender, lettuce, tomato",
+        "concepts": [
+          "blender",
+          "lettuce",
+          "tomato"
+        ],
+        "gen_text": "Generate a sentence with: blender, lettuce, tomato",
+        "expert_text": "Generate a sentence with: blender, lettuce, tomato\nStep 1. Identify required concepts: blender, lettuce, tomato\nStep 2. Plan sentence pattern: A person is using a kitchen appliance to prepare a dish with vegetables.\nStep 3. Generate sentence: She placed the lettuce and tomato into the blender to make a fresh, healthy smoothie.\nFinal Answer: She placed the lettuce and tomato into the blender to make a fresh, healthy smoothie.",
+        "coverage_ratio": 1.0,
+        "step_count": 0,
+        "step_marker": 0,
+        "length": 10,
+        "bigram_repeat_ratio": 0.0,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.6931557655334473,
+        "expert_reward": 0.621846079826355,
+        "margin_expert_minus_gen": -0.07130968570709229
+      },
+      {
+        "question": "Generate a sentence with: castle, island, sea",
+        "concepts": [
+          "castle",
+          "island",
+          "sea"
+        ],
+        "gen_text": "Generate a sentence with: castle, island, sea\nStep 1. I will start by forming the basic structure of the sentence and identifying how to incorporate these three elements.\nStep 2. The castle is best placed as a central focus of the sentence, so I'll have it standing on an\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: castle, island, sea\nStep 1. Identify required concepts: castle, island, sea\nStep 2. Plan sentence pattern: A castle is located on an island which is surrounded by the sea.\nStep 3. Generate sentence: The ancient castle stands majestically on the remote island, surrounded by the vast, blue sea.\nFinal Answer: The ancient castle stands majestically on the remote island, surrounded by the vast, blue sea.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 66,
+        "bigram_repeat_ratio": 0.06153846153846154,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7261658906936646,
+        "expert_reward": 0.6067599058151245,
+        "margin_expert_minus_gen": -0.11940598487854004
+      },
+      {
+        "question": "Generate a sentence with: model, runway, summer",
+        "concepts": [
+          "model",
+          "runway",
+          "summer"
+        ],
+        "gen_text": "Generate a sentence with: model, runway, summer\nStep 1. To generate a sentence, I will combine the given elements into a narrative context. I will include a model, a runway, and a summer setting to create a scene.\nStep 2. The model is walking on the runway during\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: model, runway, summer\nStep 1. Identify required concepts: model, runway, summer\nStep 2. Plan sentence pattern: A model is walking on a runway during a summer event or fashion show.\nStep 3. Generate sentence: The model confidently walked down the runway, showcasing vibrant summer outfits at the fashion show.\nFinal Answer: The model confidently walked down the runway, showcasing vibrant summer outfits at the fashion show.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 67,
+        "bigram_repeat_ratio": 0.09090909090909094,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7327437996864319,
+        "expert_reward": 0.617619514465332,
+        "margin_expert_minus_gen": -0.11512428522109985
+      },
+      {
+        "question": "Generate a sentence with: dusk, fishing, lighthouse",
+        "concepts": [
+          "dusk",
+          "fishing",
+          "lighthouse"
+        ],
+        "gen_text": "Generate a sentence with: dusk, fishing, lighthouse\nStep 1. It is mentioned that sunset has transpired which is typically when the\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: dusk, fishing, lighthouse\nStep 1. Identify required concepts: dusk, fishing, lighthouse\nStep 2. Plan sentence pattern: A person is fishing near a lighthouse during the time of dusk.\nStep 3. Generate sentence: As dusk settled over the horizon, the fisherman cast his line into the sea, guided by the steady beam of the nearby lighthouse.\nFinal Answer: As dusk settled over the horizon, the fisherman cast his line into the sea, guided by the steady beam of the nearby lighthouse.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 35,
+        "bigram_repeat_ratio": 0.02941176470588236,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7797152996063232,
+        "expert_reward": 0.7290614247322083,
+        "margin_expert_minus_gen": -0.05065387487411499
+      },
+      {
+        "question": "Generate a sentence with: airplane, airport, luggage",
+        "concepts": [
+          "airplane",
+          "airport",
+          "luggage"
+        ],
+        "gen_text": "Generate a sentence with: airplane, airport, luggage\nStep 1. Start with the words provided. An airplane and an airport are related as the place where airplanes take off and land, and luggage typically travels within these contexts.\nStep 2. Formulate a simple action involving these entities that makes natural sense\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: airplane, airport, luggage\nStep 1. Identify required concepts: airplane, airport, luggage\nStep 2. Plan sentence pattern: A person or people are at an airport with their luggage, and they are about to board an airplane.\nStep 3. Generate sentence: At the busy airport, travelers check in their luggage before boarding the airplane for their journey.\nFinal Answer: At the busy airport, travelers check in their luggage before boarding the airplane for their journey.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 68,
+        "bigram_repeat_ratio": 0.02985074626865669,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7790433168411255,
+        "expert_reward": 0.7376353740692139,
+        "margin_expert_minus_gen": -0.04140794277191162
+      },
+      {
+        "question": "Generate a sentence with: display, model, sale",
+        "concepts": [
+          "display",
+          "model",
+          "sale"
+        ],
+        "gen_text": "Generate a sentence with: display, model, sale\nStep 1. I need to form a meaningful sentence for the given context.\nStep 2. Consider \"display\" as in product display or show-off of goods.\nStep 3. \"Model\" here could mean a fashion runway model or product model.\nStep 4. Sale generally means it is being bought or\nFinal Answer: 4",
+        "expert_text": "Generate a sentence with: display, model, sale\nStep 1. Identify required concepts: display, model, sale\nStep 2. Plan sentence pattern: A store or showroom is having a sale where they display a particular model of a product.\nStep 3. Generate sentence: The electronics store is having a big sale and prominently displays the latest model of the smartphone.\nFinal Answer: The electronics store is having a big sale and prominently displays the latest model of the smartphone.",
+        "coverage_ratio": 1.0,
+        "step_count": 5,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.07499999999999996,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7356162071228027,
+        "expert_reward": 0.6973851323127747,
+        "margin_expert_minus_gen": -0.038231074810028076
+      },
+      {
+        "question": "Generate a sentence with: cheese, pizza, sauce",
+        "concepts": [
+          "cheese",
+          "pizza",
+          "sauce"
+        ],
+        "gen_text": "Generate a sentence with: cheese, pizza, sauce\nStep 1. A square pizza has its area calculated from side length s. Area = s²\nStep 2. Cheese is sprinkled on top of the pizza as a 0.5 inch layer.\nFinal Answer: 0.5",
+        "expert_text": "Generate a sentence with: cheese, pizza, sauce\nStep 1. Identify required concepts: cheese, pizza, sauce\nStep 2. Plan sentence pattern: A description of the process of making a pizza, emphasizing the layering of the ingredients.\nStep 3. Generate sentence: First, the sauce is spread evenly over the pizza base, then generous amounts of cheese are sprinkled on top, creating a delicious and classic pizza.\nFinal Answer: First, the sauce is spread evenly over the pizza base, then generous amounts of cheese are sprinkled on top, creating a delicious and classic pizza.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 61,
+        "bigram_repeat_ratio": 0.08333333333333337,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.685390293598175,
+        "expert_reward": 0.6806535124778748,
+        "margin_expert_minus_gen": -0.004736781120300293
+      },
+      {
+        "question": "Generate a sentence with: container, lettuce, salad",
+        "concepts": [
+          "container",
+          "lettuce",
+          "salad"
+        ],
+        "gen_text": "Generate a sentence with: container, lettuce, salad\nStep 1. Container capacity needs to accommodate all ingredients to make a complete salad with sufficient portions. Volume of container needs to be known for sufficiency checking. The container holds 4 gallons.\nStep 2. Fresh leafy greens in lettuce need volume too. Standard amounts in recipe usually mean full cups. Lett\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: container, lettuce, salad\nStep 1. Identify required concepts: container, lettuce, salad\nStep 2. Plan sentence pattern: A person is preparing a salad using lettuce and placing it in a container.\nStep 3. Generate sentence: She carefully placed the freshly washed lettuce into the container to make a healthy salad.\nFinal Answer: She carefully placed the freshly washed lettuce into the container to make a healthy salad.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.03749999999999998,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.6807191967964172,
+        "expert_reward": 0.621274471282959,
+        "margin_expert_minus_gen": -0.05944472551345825
+      },
+      {
+        "question": "Generate a sentence with: dusk, silhouette, telescope",
+        "concepts": [
+          "dusk",
+          "silhouette",
+          "telescope"
+        ],
+        "gen_text": "Generate a sentence with: dusk, silhouette, telescope\nStep 1. Identifying key elements needed for generating a sentence. [dusk, silhouette, telescope]\nStep 2. Connecting the elements in a logical flow to create coherence. [I am observing a distant, silhouetted structure from dusk using my\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: dusk, silhouette, telescope\nStep 1. Identify required concepts: dusk, silhouette, telescope\nStep 2. Plan sentence pattern: A person observes a silhouette at dusk using a telescope.\nStep 3. Generate sentence: At dusk, the astronomer used his telescope to observe the silhouette of a distant mountain range.\nFinal Answer: At dusk, the astronomer used his telescope to observe the silhouette of a distant mountain range.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 70,
+        "bigram_repeat_ratio": 0.10144927536231885,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.6977852582931519,
+        "expert_reward": 0.6523064374923706,
+        "margin_expert_minus_gen": -0.04547882080078125
+      },
+      {
+        "question": "Generate a sentence with: brother, meadow, sister",
+        "concepts": [
+          "brother",
+          "meadow",
+          "sister"
+        ],
+        "gen_text": "Generate a sentence with: brother, meadow, sister\nStep 1. Let us create a description about our family members and where they are.\nStep 2. My brother is standing at the entrance of the lush green meadow, admiring the scenery while my sister starts running through the field, giggling.\nStep 3. Now the task requires to create a sentence\nFinal Answer: 3",
+        "expert_text": "Generate a sentence with: brother, meadow, sister\nStep 1. Identify required concepts: brother, meadow, sister\nStep 2. Plan sentence pattern: A scenario where the brother and sister are in a meadow together, possibly engaging in an activity or simply being present.\nStep 3. Generate sentence: My brother and sister and I spent the afternoon playing in the sunlit meadow.\nFinal Answer: My brother and sister and I spent the afternoon playing in the sunlit meadow.",
+        "coverage_ratio": 1.0,
+        "step_count": 4,
+        "step_marker": 1,
+        "length": 82,
+        "bigram_repeat_ratio": 0.09876543209876543,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.8226823806762695,
+        "expert_reward": 0.8407610654830933,
+        "margin_expert_minus_gen": 0.01807868480682373
+      },
+      {
+        "question": "Generate a sentence with: bow, gift, ribbon",
+        "concepts": [
+          "bow",
+          "gift",
+          "ribbon"
+        ],
+        "gen_text": "Generate a sentence with: bow, gift, ribbon\nStep 1. She arranged three differently shaped bows on top of the gift with red ribbon.\nStep 2. To illustrate, let's consider the length of the ribbon used for each bow. The ribbons are 12 inches, 14 inches, and 16 inches respectively.\nStep 3.\nFinal Answer: 3",
+        "expert_text": "Generate a sentence with: bow, gift, ribbon\nStep 1. Identify required concepts: bow, gift, ribbon\nStep 2. Plan sentence pattern: A person is preparing a gift and uses a ribbon to create a bow on it. This scenario involves the action of decorating a gift with a specific type of decoration (a bow) made from another item (a ribbon).\nStep 3. Generate sentence: She carefully tied a ribbon into a perfect bow to decorate the gift.\nFinal Answer: She carefully tied a ribbon into a perfect bow to decorate the gift.",
+        "coverage_ratio": 1.0,
+        "step_count": 4,
+        "step_marker": 1,
+        "length": 80,
+        "bigram_repeat_ratio": 0.11392405063291144,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.726525604724884,
+        "expert_reward": 0.7055970430374146,
+        "margin_expert_minus_gen": -0.020928561687469482
+      },
+      {
+        "question": "Generate a sentence with: form, handle, star",
+        "concepts": [
+          "form",
+          "handle",
+          "star"
+        ],
+        "gen_text": "Generate a sentence with: form, handle, star",
+        "expert_text": "Generate a sentence with: form, handle, star\nStep 1. Identify required concepts: form, handle, star\nStep 2. Plan sentence pattern: A person forms a shape or object (in this case, a star) and then handles it, possibly for display or use.\nStep 3. Generate sentence: The artist carefully forms a star out of clay and then delicately handles it to place it on the shelf.\nFinal Answer: The artist carefully forms a star out of clay and then delicately handles it to place it on the shelf.",
+        "coverage_ratio": 1.0,
+        "step_count": 0,
+        "step_marker": 0,
+        "length": 10,
+        "bigram_repeat_ratio": 0.0,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7358145713806152,
+        "expert_reward": 0.6169254779815674,
+        "margin_expert_minus_gen": -0.11888909339904785
+      },
+      {
+        "question": "Generate a sentence with: display, pizza, variety",
+        "concepts": [
+          "display",
+          "pizza",
+          "variety"
+        ],
+        "gen_text": "Generate a sentence with: display, pizza, variety\nStep 1. I need to create a sentence that includes the words display, pizza, and variety. The restaurant featured a colorful display of pizzas in a wide variety of shapes, sizes, and toppings.\nStep 2. I can add punctuation and\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: display, pizza, variety\nStep 1. Identify required concepts: display, pizza, variety\nStep 2. Plan sentence pattern: A setting where different types of pizzas are shown or presented, emphasizing the range or diversity of options.\nStep 3. Generate sentence: The pizzeria has a beautiful display showcasing a variety of delicious pizzas.\nFinal Answer: The pizzeria has a beautiful display showcasing a variety of delicious pizzas.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 67,
+        "bigram_repeat_ratio": 0.12121212121212122,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.6810489892959595,
+        "expert_reward": 0.5971054434776306,
+        "margin_expert_minus_gen": -0.08394354581832886
+      },
+      {
+        "question": "Generate a sentence with: passenger, ship, trip",
+        "concepts": [
+          "passenger",
+          "ship",
+          "trip"
+        ],
+        "gen_text": "Generate a sentence with: passenger, ship, trip\nStep 1. We'll start by determining that a new passenger ship begins its year-long voyage across the Atlantic and Pacific oceans.\nStep 2. To form an example situation where we could incorporate passengers in such\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: passenger, ship, trip\nStep 1. Identify required concepts: passenger, ship, trip\nStep 2. Plan sentence pattern: A passenger is taking a trip on a ship.\nStep 3. Generate sentence: The excited passenger boarded the luxurious cruise ship for a week-long trip to the Caribbean.\nFinal Answer: The excited passenger boarded the luxurious cruise ship for a week-long trip to the Caribbean.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 59,
+        "bigram_repeat_ratio": 0.03448275862068961,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7335485219955444,
+        "expert_reward": 0.6736785769462585,
+        "margin_expert_minus_gen": -0.05986994504928589
+      },
+      {
+        "question": "Generate a sentence with: cattle, herd, morning",
+        "concepts": [
+          "cattle",
+          "herd",
+          "morning"
+        ],
+        "gen_text": "Generate a sentence with: cattle, herd, morning\nStep 1. Understand the statement and identify necessary information - We are given a herd size but there's no indication of required action or measurement.\nStep 2. Formulate sentence based on available context - In\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: cattle, herd, morning\nStep 1. Identify required concepts: cattle, herd, morning\nStep 2. Plan sentence pattern: A scenario where a group of cattle (herd) is observed or managed during the morning.\nStep 3. Generate sentence: In the early morning, the farmer guided the herd of cattle to the pasture for grazing.\nFinal Answer: In the early morning, the farmer guided the herd of cattle to the pasture for grazing.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 59,
+        "bigram_repeat_ratio": 0.03448275862068961,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.8062635660171509,
+        "expert_reward": 0.7433954477310181,
+        "margin_expert_minus_gen": -0.06286811828613281
+      },
+      {
+        "question": "Generate a sentence with: sailing, sea, ship",
+        "concepts": [
+          "sailing",
+          "sea",
+          "ship"
+        ],
+        "gen_text": "Generate a sentence with: sailing, sea, ship\nStep 1. Identify the key elements of the sentence - sailing, sea, and ship.\nStep 2. Construct a grammatically correct and coherent sentence involving these words. Sentence resulting from the construction: The\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: sailing, sea, ship\nStep 1. Identify required concepts: sailing, sea, ship\nStep 2. Plan sentence pattern: A ship is engaged in the activity of sailing on the sea.\nStep 3. Generate sentence: The majestic ship was sailing smoothly across the vast sea.\nFinal Answer: The majestic ship was sailing smoothly across the vast sea.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 59,
+        "bigram_repeat_ratio": 0.08620689655172409,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7132620811462402,
+        "expert_reward": 0.6649068593978882,
+        "margin_expert_minus_gen": -0.04835522174835205
+      },
+      {
+        "question": "Generate a sentence with: cattle, graze, lake",
+        "concepts": [
+          "cattle",
+          "graze",
+          "lake"
+        ],
+        "gen_text": "Generate a sentence with: cattle, graze, lake\nStep 1. We first define how a sentence might be created using the given words: a group of cattle (which is necessary), the word \"graze\" (indicates action), and the term \"lake\" (a location).\nStep 2. I need to logically structure these elements together so that they\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: cattle, graze, lake\nStep 1. Identify required concepts: cattle, graze, lake\nStep 2. Plan sentence pattern: The cattle are grazing near a lake.\nStep 3. Generate sentence: The cattle graze peacefully near the serene lake.\nFinal Answer: The cattle graze peacefully near the serene lake.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.050000000000000044,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.776343584060669,
+        "expert_reward": 0.725344181060791,
+        "margin_expert_minus_gen": -0.05099940299987793
+      },
+      {
+        "question": "Generate a sentence with: know, location, thing",
+        "concepts": [
+          "know",
+          "location",
+          "thing"
+        ],
+        "gen_text": "Generate a sentence with: know, location, thing\nStep 1. To find out how much food in total the chickens need, we multiply the number\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: know, location, thing\nStep 1. Identify required concepts: know, location, thing\nStep 2. Plan sentence pattern: A person knows the location of a specific thing.\nStep 3. Generate sentence: She knows the exact location of the lost thing in the house.\nFinal Answer: She knows the exact location of the lost thing in the house.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 37,
+        "bigram_repeat_ratio": 0.02777777777777779,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7475835084915161,
+        "expert_reward": 0.681086003780365,
+        "margin_expert_minus_gen": -0.06649750471115112
+      },
+      {
+        "question": "Generate a sentence with: airplane, banner, businessman",
+        "concepts": [
+          "airplane",
+          "banner",
+          "businessman"
+        ],
+        "gen_text": "Generate a sentence with: airplane, banner, businessman\nStep 1. The sentence needs to incorporate an airplane, a banner, and a businessman.\nStep 2. To integrate these elements, we can describe the setting or action involving all three.\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: airplane, banner, businessman\nStep 1. Identify required concepts: airplane, banner, businessman\nStep 2. Plan sentence pattern: A businessman is involved in an activity related to an airplane and a banner. The scenario could be that the businessman is using an airplane to display a banner for advertising or promotional purposes.\nStep 3. Generate sentence: The ambitious businessman hired an airplane to fly a large banner over the city, advertising his new product.\nFinal Answer: The ambitious businessman hired an airplane to fly a large banner over the city, advertising his new product.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 55,
+        "bigram_repeat_ratio": 0.07407407407407407,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7577158212661743,
+        "expert_reward": 0.6972934007644653,
+        "margin_expert_minus_gen": -0.060422420501708984
+      },
+      {
+        "question": "Generate a sentence with: canoe, lake, reflection",
+        "concepts": [
+          "canoe",
+          "lake",
+          "reflection"
+        ],
+        "gen_text": "Generate a sentence with: canoe, lake, reflection\nStep 1. Question breakdown - A canoe sits on the lake with reflection in it that makes it appear like two of them side by side. You can derive an equation linking lengths of the real and reflected canoe as L = x + x where x represents their combined length. Solve for X when L equals 20 feet. Step\nFinal Answer: 20",
+        "expert_text": "Generate a sentence with: canoe, lake, reflection\nStep 1. Identify required concepts: canoe, lake, reflection\nStep 2. Plan sentence pattern: A canoe is on a lake, and the reflection of the canoe can be seen in the water.\nStep 3. Generate sentence: The canoe glides smoothly over the calm lake, its reflection perfectly mirrored in the still water.\nFinal Answer: The canoe glides smoothly over the calm lake, its reflection perfectly mirrored in the still water.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 85,
+        "bigram_repeat_ratio": 0.023809523809523836,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.6476238369941711,
+        "expert_reward": 0.587800145149231,
+        "margin_expert_minus_gen": -0.059823691844940186
+      },
+      {
+        "question": "Generate a sentence with: beige, bow, sale",
+        "concepts": [
+          "beige",
+          "bow",
+          "sale"
+        ],
+        "gen_text": "Generate a sentence with: beige, bow, sale\nStep 1. Determine a combination of the three words provided. \"Beige\" suggests a color, \"bow\" suggests something tied up or shaped like a bow, and \"sale\" suggests something being sold at a reduced price. Step\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: beige, bow, sale\nStep 1. Identify required concepts: beige, bow, sale\nStep 2. Plan sentence pattern: A scenario where a beige item with a bow is on sale in a store.\nStep 3. Generate sentence: The store has a beautiful beige dress with a delicate bow on sale this weekend.\nFinal Answer: The store has a beautiful beige dress with a delicate bow on sale this weekend.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 65,
+        "bigram_repeat_ratio": 0.078125,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.6894563436508179,
+        "expert_reward": 0.6303247213363647,
+        "margin_expert_minus_gen": -0.059131622314453125
+      },
+      {
+        "question": "Generate a sentence with: airplane, runway, terminal",
+        "concepts": [
+          "airplane",
+          "runway",
+          "terminal"
+        ],
+        "gen_text": "Generate a sentence with: airplane, runway, terminal\nStep 1. I want to create a simple scene including an airplane, a runway, and a terminal. Sentence: The shiny commercial airplane taxied down the long, straight runway before entering the bustling airport terminal.\nStep 2.\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: airplane, runway, terminal\nStep 1. Identify required concepts: airplane, runway, terminal\nStep 2. Plan sentence pattern: The sentence should describe a scenario where an airplane is interacting with both the runway and the terminal. A logical sequence would be that the airplane is taking off or landing, which involves the runway, and then it is either heading to or from the terminal.\nStep 3. Generate sentence: The airplane taxied down the runway and headed towards the terminal for passenger boarding.\nFinal Answer: The airplane taxied down the runway and headed towards the terminal for passenger boarding.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 63,
+        "bigram_repeat_ratio": 0.06451612903225812,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7342936992645264,
+        "expert_reward": 0.7215155959129333,
+        "margin_expert_minus_gen": -0.012778103351593018
+      },
+      {
+        "question": "Generate a sentence with: approach, carriage, passenger",
+        "concepts": [
+          "approach",
+          "carriage",
+          "passenger"
+        ],
+        "gen_text": "Generate a sentence with: approach, carriage, passenger",
+        "expert_text": "Generate a sentence with: approach, carriage, passenger\nStep 1. Identify required concepts: approach, carriage, passenger\nStep 2. Plan sentence pattern: A scenario where a passenger is in or near a carriage and something (or someone) approaches the carriage.\nStep 3. Generate sentence: As the carriage rolled down the cobblestone street, a mysterious figure began to approach, causing the passenger to lean out of the window to get a better look.\nFinal Answer: As the carriage rolled down the cobblestone street, a mysterious figure began to approach, causing the passenger to lean out of the window to get a better look.",
+        "coverage_ratio": 1.0,
+        "step_count": 0,
+        "step_marker": 0,
+        "length": 10,
+        "bigram_repeat_ratio": 0.0,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7254811525344849,
+        "expert_reward": 0.6752668619155884,
+        "margin_expert_minus_gen": -0.050214290618896484
+      },
+      {
+        "question": "Generate a sentence with: center, cream, daughter, hall, sofa",
+        "concepts": [
+          "center",
+          "cream",
+          "daughter",
+          "hall",
+          "sofa"
+        ],
+        "gen_text": "Generate a sentence with: center, cream, daughter, hall, sofa\nStep 1. Use the given words to create a meaningful and coherent phrase. First, start by selecting a starting point - the \"center.\" I'll position the \"daughter\" at that center for a relatable point of view. Center is\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: center, cream, daughter, hall, sofa\nStep 1. Identify required concepts: center, cream, daughter, hall, sofa\nStep 2. Plan sentence pattern: A scenario where a daughter is in the center of a hall, and there is a mention of a cream-colored sofa.\nStep 3. Generate sentence: The daughter stood in the center of the hall, admiring the new cream-colored sofa that had just been placed there.\nFinal Answer: The daughter stood in the center of the hall, admiring the new cream-colored sofa that had just been placed there.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 70,
+        "bigram_repeat_ratio": 0.02898550724637683,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.8260517716407776,
+        "expert_reward": 0.760694146156311,
+        "margin_expert_minus_gen": -0.06535762548446655
+      },
+      {
+        "question": "Generate a sentence with: farm, farmer, town",
+        "concepts": [
+          "farm",
+          "farmer",
+          "town"
+        ],
+        "gen_text": "Generate a sentence with: farm, farmer, town\nStep 1. Let us express a simple statement about a farmer interacting with both a farm and a town in a structured way: Farmer Joe lives on his vast farm located between the town of Springfield and Elmwood City. [explanation]\nStep 2. This statement doesn't directly involve arithmetic but forms the basis for\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: farm, farmer, town\nStep 1. Identify required concepts: farm, farmer, town\nStep 2. Plan sentence pattern: A scenario where a farmer from a farm has a connection or interaction with the nearby town.\nStep 3. Generate sentence: The farmer from the local farm travels to the nearby town every weekend to sell fresh produce at the market.\nFinal Answer: The farmer from the local farm travels to the nearby town every weekend to sell fresh produce at the market.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.025000000000000022,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7329205274581909,
+        "expert_reward": 0.6988513469696045,
+        "margin_expert_minus_gen": -0.034069180488586426
+      },
+      {
+        "question": "Generate a sentence with: aircraft, model, pilot",
+        "concepts": [
+          "aircraft",
+          "model",
+          "pilot"
+        ],
+        "gen_text": "Generate a sentence with: aircraft, model, pilot\nStep 1. I am going to generate a sentence using the words aircraft, model, and pilot. Sentence: The pilot carefully studied the flight manual for the new aircraft model to ensure all systems were operational before takeoff.\nFinal Answer: This s\nStep 1. I am going to generate a sentence using the words aircraft, model, and pilot. Sentence: The pilot carefully studied the flight manual for the new aircraft model to ensure all systems were operational before takeoff.",
+        "expert_text": "Generate a sentence with: aircraft, model, pilot\nStep 1. Identify required concepts: aircraft, model, pilot\nStep 2. Plan sentence pattern: A pilot is interacting with a model of an aircraft.\nStep 3. Generate sentence: The experienced pilot carefully examines the detailed model of the new aircraft before the test flight.\nFinal Answer: The experienced pilot carefully examines the detailed model of the new aircraft before the test flight.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 107,
+        "bigram_repeat_ratio": 0.4528301886792453,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.6782370209693909,
+        "expert_reward": 0.6357462406158447,
+        "margin_expert_minus_gen": -0.04249078035354614
+      },
+      {
+        "question": "Generate a sentence with: aisle, employee, shelf",
+        "concepts": [
+          "aisle",
+          "employee",
+          "shelf"
+        ],
+        "gen_text": "Generate a sentence with: aisle, employee, shelf\nStep 1. Let us imagine an employee working in a grocery store and we need to form a sentence concerning movements within the space, likely using an 'aisle'.[no equation involved]\nStep 2. The sentence could be about an employee moving to a specific location on an 'aisle' to stock or\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: aisle, employee, shelf\nStep 1. Identify required concepts: aisle, employee, shelf\nStep 2. Plan sentence pattern: An employee is working in an aisle and interacting with a shelf.\nStep 3. Generate sentence: The store employee carefully restocks the items on the shelf while walking down the aisle.\nFinal Answer: The store employee carefully restocks the items on the shelf while walking down the aisle.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.08750000000000002,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.8558574914932251,
+        "expert_reward": 0.7833103537559509,
+        "margin_expert_minus_gen": -0.07254713773727417
+      }
+    ]
+  },
+  "warmup": {
+    "label": "warmup",
+    "summary": {
+      "reward": {
+        "mean": 0.7471738457679749,
+        "std": 0.048437949270009995,
+        "p50": 0.7458203434944153,
+        "p90": 0.8132492244243622
+      },
+      "expert_reward": {
+        "mean": 0.6860544681549072,
+        "std": 0.058959003537893295,
+        "p50": 0.6903359889984131,
+        "p90": 0.7620374739170075
+      },
+      "margin_expert_minus_gen": {
+        "mean": -0.06111936271190643,
+        "std": 0.047492727637290955,
+        "p50": -0.0636594295501709,
+        "p90": -0.011281275749206518
+      },
+      "coverage_mean": 1.0,
+      "step_count_mean": 2.44,
+      "step_marker_rate": 0.84,
+      "length_mean": 62.32,
+      "bigram_repeat_mean": 0.07097023714348326,
+      "degenerate_ratio_mean": 0.0
+    },
+    "samples": [
+      {
+        "question": "Generate a sentence with: barn, cattle, herd",
+        "concepts": [
+          "barn",
+          "cattle",
+          "herd"
+        ],
+        "gen_text": "Generate a sentence with: barn, cattle, herd\nStep 1. To create a sentence with the requested words, I need to weave them together in a coherent way.\nStep 2. The sentence should be describing a scene on a farm where some kind of animal and people are interacting in or near a barn.\nStep 3. I will create a sentence that discusses\nFinal Answer: 3",
+        "expert_text": "Generate a sentence with: barn, cattle, herd\nStep 1. Identify required concepts: barn, cattle, herd\nStep 2. Plan sentence pattern: A scenario where a group of cattle (herd) is being moved to or from a barn.\nStep 3. Generate sentence: The farmer guided the herd of cattle into the large barn for the night.\nFinal Answer: The farmer guided the herd of cattle into the large barn for the night.",
+        "coverage_ratio": 1.0,
+        "step_count": 4,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.09999999999999998,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7693638801574707,
+        "expert_reward": 0.703523576259613,
+        "margin_expert_minus_gen": -0.06584030389785767
+      },
+      {
+        "question": "Generate a sentence with: design, poster, sale",
+        "concepts": [
+          "design",
+          "poster",
+          "sale"
+        ],
+        "gen_text": "Generate a sentence with: design, poster, sale",
+        "expert_text": "Generate a sentence with: design, poster, sale\nStep 1. Identify required concepts: design, poster, sale\nStep 2. Plan sentence pattern: A person or a group creates a design for a poster to advertise a sale.\nStep 3. Generate sentence: The marketing team designed an eye-catching poster to promote the upcoming weekend sale.\nFinal Answer: The marketing team designed an eye-catching poster to promote the upcoming weekend sale.",
+        "coverage_ratio": 1.0,
+        "step_count": 0,
+        "step_marker": 0,
+        "length": 10,
+        "bigram_repeat_ratio": 0.0,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7423018217086792,
+        "expert_reward": 0.7104482054710388,
+        "margin_expert_minus_gen": -0.03185361623764038
+      },
+      {
+        "question": "Generate a sentence with: castle, cliff, sea",
+        "concepts": [
+          "castle",
+          "cliff",
+          "sea"
+        ],
+        "gen_text": "Generate a sentence with: castle, cliff, sea",
+        "expert_text": "Generate a sentence with: castle, cliff, sea\nStep 1. Identify required concepts: castle, cliff, sea\nStep 2. Plan sentence pattern: A castle is situated on a cliff that overlooks the sea. This structure creates a vivid image of a dramatic and picturesque setting, with the castle as the focal point.\nStep 3. Generate sentence: The ancient castle stands majestically on a rugged cliff, overlooking the vast and endless sea.\nFinal Answer: The ancient castle stands majestically on a rugged cliff, overlooking the vast and endless sea.",
+        "coverage_ratio": 1.0,
+        "step_count": 0,
+        "step_marker": 0,
+        "length": 10,
+        "bigram_repeat_ratio": 0.0,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.68473219871521,
+        "expert_reward": 0.6205732822418213,
+        "margin_expert_minus_gen": -0.06415891647338867
+      },
+      {
+        "question": "Generate a sentence with: passenger, sea, ship",
+        "concepts": [
+          "passenger",
+          "sea",
+          "ship"
+        ],
+        "gen_text": "Generate a sentence with: passenger, sea, ship\nStep 1. First, I need to note that the passage of time from getting on the ship to the ship\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: passenger, sea, ship\nStep 1. Identify required concepts: passenger, sea, ship\nStep 2. Plan sentence pattern: A passenger is on a ship that is sailing on the sea.\nStep 3. Generate sentence: The excited passenger stood on the deck of the ship as it sailed smoothly across the vast sea.\nFinal Answer: The excited passenger stood on the deck of the ship as it sailed smoothly across the vast sea.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 40,
+        "bigram_repeat_ratio": 0.07692307692307687,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7898557186126709,
+        "expert_reward": 0.6385000944137573,
+        "margin_expert_minus_gen": -0.15135562419891357
+      },
+      {
+        "question": "Generate a sentence with: airplane, engine, propeller",
+        "concepts": [
+          "airplane",
+          "engine",
+          "propeller"
+        ],
+        "gen_text": "Generate a sentence with: airplane, engine, propeller\nStep 1. The given task requires generating a sentence to describe an airplane’s engine and its relationship to the propeller.\nStep 2. A sentence should describe how the engine and propeller work together in an airplane to produce motion\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: airplane, engine, propeller\nStep 1. Identify required concepts: airplane, engine, propeller\nStep 2. Plan sentence pattern: The sentence will describe the relationship between the engine and the propeller of an airplane, highlighting how they work together to make the airplane function.\nStep 3. Generate sentence: The engine of the airplane powers the propeller, which in turn generates the thrust needed for flight.\nFinal Answer: The engine of the airplane powers the propeller, which in turn generates the thrust needed for flight.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 65,
+        "bigram_repeat_ratio": 0.109375,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7494109869003296,
+        "expert_reward": 0.6702343225479126,
+        "margin_expert_minus_gen": -0.07917666435241699
+      },
+      {
+        "question": "Generate a sentence with: aircraft, airport, runway",
+        "concepts": [
+          "aircraft",
+          "airport",
+          "runway"
+        ],
+        "gen_text": "Generate a sentence with: aircraft, airport, runway",
+        "expert_text": "Generate a sentence with: aircraft, airport, runway\nStep 1. Identify required concepts: aircraft, airport, runway\nStep 2. Plan sentence pattern: An aircraft is at an airport and it is using the runway for a specific action (e.g., taking off or landing).\nStep 3. Generate sentence: The aircraft taxied to the end of the runway at the busy airport, preparing for takeoff.\nFinal Answer: The aircraft taxied to the end of the runway at the busy airport, preparing for takeoff.",
+        "coverage_ratio": 1.0,
+        "step_count": 0,
+        "step_marker": 0,
+        "length": 10,
+        "bigram_repeat_ratio": 0.0,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7108100652694702,
+        "expert_reward": 0.6376925706863403,
+        "margin_expert_minus_gen": -0.07311749458312988
+      },
+      {
+        "question": "Generate a sentence with: love, shower, tile",
+        "concepts": [
+          "love",
+          "shower",
+          "tile"
+        ],
+        "gen_text": "Generate a sentence with: love, shower, tile",
+        "expert_text": "Generate a sentence with: love, shower, tile\nStep 1. Identify required concepts: love, shower, tile\nStep 2. Plan sentence pattern: A person expresses their admiration for a specific aspect of a shower, which is the tiles.\nStep 3. Generate sentence: She loves the intricate design of the blue tiles in her newly renovated shower.\nFinal Answer: She loves the intricate design of the blue tiles in her newly renovated shower.",
+        "coverage_ratio": 1.0,
+        "step_count": 0,
+        "step_marker": 0,
+        "length": 10,
+        "bigram_repeat_ratio": 0.0,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.6940619945526123,
+        "expert_reward": 0.6979312300682068,
+        "margin_expert_minus_gen": 0.0038692355155944824
+      },
+      {
+        "question": "Generate a sentence with: brother, garden, sister",
+        "concepts": [
+          "brother",
+          "garden",
+          "sister"
+        ],
+        "gen_text": "Generate a sentence with: brother, garden, sister",
+        "expert_text": "Generate a sentence with: brother, garden, sister\nStep 1. Identify required concepts: brother, garden, sister\nStep 2. Plan sentence pattern: The brother and sister are doing an activity together in the garden.\nStep 3. Generate sentence: The brother and sister are planting flowers together in their family garden.\nFinal Answer: The brother and sister are planting flowers together in their family garden.",
+        "coverage_ratio": 1.0,
+        "step_count": 0,
+        "step_marker": 0,
+        "length": 10,
+        "bigram_repeat_ratio": 0.0,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7134802341461182,
+        "expert_reward": 0.7957637310028076,
+        "margin_expert_minus_gen": 0.08228349685668945
+      },
+      {
+        "question": "Generate a sentence with: clock, display, post",
+        "concepts": [
+          "clock",
+          "display",
+          "post"
+        ],
+        "gen_text": "Generate a sentence with: clock, display, post\nStep 1. Identify needed items. The items needed are a clock, a display, and a post.\nStep 2. Construct a scenario where these items could logically be used together.\nStep 3. Create a sentence that incorporates all three items in\nFinal Answer: 3",
+        "expert_text": "Generate a sentence with: clock, display, post\nStep 1. Identify required concepts: clock, display, post\nStep 2. Plan sentence pattern: A clock with a specific type of display is mounted or placed on a post.\nStep 3. Generate sentence: The digital clock with a bright LED display was mounted on the post at the bus stop.\nFinal Answer: The digital clock with a bright LED display was mounted on the post at the bus stop.",
+        "coverage_ratio": 1.0,
+        "step_count": 4,
+        "step_marker": 1,
+        "length": 68,
+        "bigram_repeat_ratio": 0.10447761194029848,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7584649324417114,
+        "expert_reward": 0.675251841545105,
+        "margin_expert_minus_gen": -0.08321309089660645
+      },
+      {
+        "question": "Generate a sentence with: evening, gown, model",
+        "concepts": [
+          "evening",
+          "gown",
+          "model"
+        ],
+        "gen_text": "Generate a sentence with: evening, gown, model\nStep 1. A local designer decided to showcase her designs by putting on a fashion show in the evening. She invited a model to wear one of her new gowns at the event. Since this was for a public occasion, an evening gown would be more formal and elegant in design and fabric choices such as satins\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: evening, gown, model\nStep 1. Identify required concepts: evening, gown, model\nStep 2. Plan sentence pattern: A model is wearing an evening gown at a specific event or occasion.\nStep 3. Generate sentence: The elegant model walked down the runway in a stunning evening gown during the fashion show.\nFinal Answer: The elegant model walked down the runway in a stunning evening gown during the fashion show.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.012499999999999956,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.6043851375579834,
+        "expert_reward": 0.581871509552002,
+        "margin_expert_minus_gen": -0.022513628005981445
+      },
+      {
+        "question": "Generate a sentence with: display, exhibit, giraffe",
+        "concepts": [
+          "display",
+          "exhibit",
+          "giraffe"
+        ],
+        "gen_text": "Generate a sentence with: display, exhibit, giraffe\nStep 1. The sentence needs to incorporate all three words in a coherent manner without any explicit number, time, or calculation.\nStep 2. Plan the sentence such that it flows smoothly and makes semantic sense. Step\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: display, exhibit, giraffe\nStep 1. Identify required concepts: display, exhibit, giraffe\nStep 2. Plan sentence pattern: A setting where a giraffe is part of an exhibit or display, likely in a zoo or museum context.\nStep 3. Generate sentence: The zoo has set up a new exhibit to display the tall and graceful giraffe, attracting many visitors.\nFinal Answer: The zoo has set up a new exhibit to display the tall and graceful giraffe, attracting many visitors.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 62,
+        "bigram_repeat_ratio": 0.032786885245901676,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.746538519859314,
+        "expert_reward": 0.6833785772323608,
+        "margin_expert_minus_gen": -0.06315994262695312
+      },
+      {
+        "question": "Generate a sentence with: banner, cattle, herd",
+        "concepts": [
+          "banner",
+          "cattle",
+          "herd"
+        ],
+        "gen_text": "Generate a sentence with: banner, cattle, herd\nStep 1. We first need to consider the scenario where a farmer uses a colorful banner during a parade in town to advertise his large cattle herd.\nStep 2. The farmer has 120 total heads of cattle in his herd which will be visible during the parade.\nStep 3. For every 5\nFinal Answer: 5",
+        "expert_text": "Generate a sentence with: banner, cattle, herd\nStep 1. Identify required concepts: banner, cattle, herd\nStep 2. Plan sentence pattern: A scenario where a banner is associated with a group of cattle (herd) in some way. The banner could be used to guide or identify the herd.\nStep 3. Generate sentence: The rancher hung a large banner over the gate to welcome the cattle as they herded through.\nFinal Answer: The rancher hung a large banner over the gate to welcome the cattle as they herded through.",
+        "coverage_ratio": 1.0,
+        "step_count": 4,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.0625,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7675672173500061,
+        "expert_reward": 0.7180004119873047,
+        "margin_expert_minus_gen": -0.049566805362701416
+      },
+      {
+        "question": "Generate a sentence with: country, lap, star",
+        "concepts": [
+          "country",
+          "lap",
+          "star"
+        ],
+        "gen_text": "Generate a sentence with: country, lap, star\nStep 1. The task requires constructing a sentence with the words: country, lap, and star. No calculations are needed for this. My sentence will be constructed following typical English sentence structure, where one would use \"country\", \"lap\", and \"star\" in a coordinated fashion to make a meaningful sentence. Step\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: country, lap, star\nStep 1. Identify required concepts: country, lap, star\nStep 2. Plan sentence pattern: A person from a specific country is sitting with a child on their lap, and they are looking at the stars.\nStep 3. Generate sentence: The woman from the small country sat with her child on her lap, gazing up at the bright star in the night sky.\nFinal Answer: The woman from the small country sat with her child on her lap, gazing up at the bright star in the night sky.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.08750000000000002,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7601979374885559,
+        "expert_reward": 0.6220035552978516,
+        "margin_expert_minus_gen": -0.13819438219070435
+      },
+      {
+        "question": "Generate a sentence with: collection, model, runway",
+        "concepts": [
+          "collection",
+          "model",
+          "runway"
+        ],
+        "gen_text": "Generate a sentence with: collection, model, runway\nStep 1. Describe a model being used on a fashion runway.\nStep 2. The first thought might be that the run appears well structured but it doesn't require calculations.\nStep 3. Combine ideas about models in general and runways. We can describe a scenario like; a talented new model walks gracefully down\nFinal Answer: 3",
+        "expert_text": "Generate a sentence with: collection, model, runway\nStep 1. Identify required concepts: collection, model, runway\nStep 2. Plan sentence pattern: A fashion context is suitable for these concepts. The sentence can describe a situation where a model is showcasing a collection on a runway.\nStep 3. Generate sentence: The model confidently walked down the runway, showcasing the latest designer collection.\nFinal Answer: The model confidently walked down the runway, showcasing the latest designer collection.",
+        "coverage_ratio": 1.0,
+        "step_count": 4,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.050000000000000044,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.6635987758636475,
+        "expert_reward": 0.6332427859306335,
+        "margin_expert_minus_gen": -0.030355989933013916
+      },
+      {
+        "question": "Generate a sentence with: keyboard, mouse, part",
+        "concepts": [
+          "keyboard",
+          "mouse",
+          "part"
+        ],
+        "gen_text": "Generate a sentence with: keyboard, mouse, part\nStep 1. To create a sentence with keyboard and mouse included as part of the description, I will combine them into a phrase.\nStep 2. I will include the term \"part\" in context to describe either device. Step\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: keyboard, mouse, part\nStep 1. Identify required concepts: keyboard, mouse, part\nStep 2. Plan sentence pattern: A sentence describing the relationship between a keyboard and a mouse as parts of a computer setup.\nStep 3. Generate sentence: The keyboard and mouse are essential parts of a typical desktop computer setup.\nFinal Answer: The keyboard and mouse are essential parts of a typical desktop computer setup.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 64,
+        "bigram_repeat_ratio": 0.07936507936507942,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.8157060742378235,
+        "expert_reward": 0.8027414083480835,
+        "margin_expert_minus_gen": -0.01296466588973999
+      },
+      {
+        "question": "Generate a sentence with: airplane, airport, strip",
+        "concepts": [
+          "airplane",
+          "airport",
+          "strip"
+        ],
+        "gen_text": "Generate a sentence with: airplane, airport, strip\nStep 1. To generate a sentence, I will use the words: airplane, airport, and strip in a context. [Context] An airplane is landing or taking off at an airport on its designated runway (which looks like a long strip).\nStep 2. I can\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: airplane, airport, strip\nStep 1. Identify required concepts: airplane, airport, strip\nStep 2. Plan sentence pattern: An airplane is at an airport and it is on or near a runway (strip). The sentence will describe the airplane's position in relation to the airport and the strip.\nStep 3. Generate sentence: The airplane is parked at the airport, ready for takeoff from the nearby strip.\nFinal Answer: The airplane is parked at the airport, ready for takeoff from the nearby strip.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 73,
+        "bigram_repeat_ratio": 0.09722222222222221,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7361025810241699,
+        "expert_reward": 0.7003669738769531,
+        "margin_expert_minus_gen": -0.0357356071472168
+      },
+      {
+        "question": "Generate a sentence with: bun, hotdog, ketchup, mustard",
+        "concepts": [
+          "bun",
+          "hotdog",
+          "ketchup",
+          "mustard"
+        ],
+        "gen_text": "Generate a sentence with: bun, hotdog, ketchup, mustard",
+        "expert_text": "Generate a sentence with: bun, hotdog, ketchup, mustard\nStep 1. Identify required concepts: bun, hotdog, ketchup, mustard\nStep 2. Plan sentence pattern: A person prepares a hotdog by placing it in a bun and adding condiments (ketchup and mustard).\nStep 3. Generate sentence: The chef places the hotdog in a soft bun and then adds a generous amount of ketchup and mustard on top.\nFinal Answer: The chef places the hotdog in a soft bun and then adds a generous amount of ketchup and mustard on top.",
+        "coverage_ratio": 1.0,
+        "step_count": 0,
+        "step_marker": 0,
+        "length": 14,
+        "bigram_repeat_ratio": 0.0,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.735488772392273,
+        "expert_reward": 0.7155576348304749,
+        "margin_expert_minus_gen": -0.019931137561798096
+      },
+      {
+        "question": "Generate a sentence with: attention, brunette, focus",
+        "concepts": [
+          "attention",
+          "brunette",
+          "focus"
+        ],
+        "gen_text": "Generate a sentence with: attention, brunette, focus\nStep 1. First, describe the scenario and identify the goal. The scenario involves generating a sentence with attention, brunette, and focus keywords.\nStep 2. To craft a coherent sentence that incorporates these elements, we can structure it around someone, specifically a woman with brown hair, who captures another's attention by remaining\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: attention, brunette, focus\nStep 1. Identify required concepts: attention, brunette, focus\nStep 2. Plan sentence pattern: A brunette is trying to focus on a task but is having trouble due to distractions, which draws the attention of others.\nStep 3. Generate sentence: The brunette was struggling to focus on her work, and her obvious frustration began to draw the attention of her coworkers.\nFinal Answer: The brunette was struggling to focus on her work, and her obvious frustration began to draw the attention of her coworkers.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.08750000000000002,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7219204902648926,
+        "expert_reward": 0.7530909776687622,
+        "margin_expert_minus_gen": 0.03117048740386963
+      },
+      {
+        "question": "Generate a sentence with: airport, luggage, travel",
+        "concepts": [
+          "airport",
+          "luggage",
+          "travel"
+        ],
+        "gen_text": "Generate a sentence with: airport, luggage, travel\nStep 1. To generate the sentence, I need to include elements related to airport, luggage, and travel. I'll start by setting the scene at an airport with someone (e.g., a traveler) about to board a plane while also taking care of luggage.\nStep 2. The sentence can be constructed such\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: airport, luggage, travel\nStep 1. Identify required concepts: airport, luggage, travel\nStep 2. Plan sentence pattern: A person is at the airport with their luggage, preparing for a trip.\nStep 3. Generate sentence: At the bustling airport, Jane wheeled her luggage through the terminal, excited for her upcoming travel adventure.\nFinal Answer: At the bustling airport, Jane wheeled her luggage through the terminal, excited for her upcoming travel adventure.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.0625,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7802180051803589,
+        "expert_reward": 0.7195250988006592,
+        "margin_expert_minus_gen": -0.06069290637969971
+      },
+      {
+        "question": "Generate a sentence with: graze, landscape, meadow",
+        "concepts": [
+          "graze",
+          "landscape",
+          "meadow"
+        ],
+        "gen_text": "Generate a sentence with: graze, landscape, meadow\nStep 1. To generate a sentence with the required words, we begin by considering an image or scenario that logically incorporates a place where both animals and a terrain are present.\nStep 2. Considering a location in nature such as a park or farm often has the\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: graze, landscape, meadow\nStep 1. Identify required concepts: graze, landscape, meadow\nStep 2. Plan sentence pattern: The sentence should describe a scene where animals are grazing in a meadow, which is part of a broader landscape.\nStep 3. Generate sentence: The cattle graze peacefully in the lush meadow, contributing to the serene and picturesque landscape.\nFinal Answer: The cattle graze peacefully in the lush meadow, contributing to the serene and picturesque landscape.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 72,
+        "bigram_repeat_ratio": 0.05633802816901412,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7420711517333984,
+        "expert_reward": 0.708462119102478,
+        "margin_expert_minus_gen": -0.03360903263092041
+      },
+      {
+        "question": "Generate a sentence with: guard, round, tournament",
+        "concepts": [
+          "guard",
+          "round",
+          "tournament"
+        ],
+        "gen_text": "Generate a sentence with: guard, round, tournament\nStep 1. To generate a sentence that involves a guard, a round, and a tournament. The reason for this is to meet all given input elements in one clear descriptive statement.\nStep 2. no calculation needed, just creating text\nFinal Answer: A secu\nStep 2. no calculation needed, just creating text",
+        "expert_text": "Generate a sentence with: guard, round, tournament\nStep 1. Identify required concepts: guard, round, tournament\nStep 2. Plan sentence pattern: A guard is involved in a specific round of a tournament, possibly providing security or overseeing the event.\nStep 3. Generate sentence: The security guard was assigned to oversee the final round of the chess tournament.\nFinal Answer: The security guard was assigned to oversee the final round of the chess tournament.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 78,
+        "bigram_repeat_ratio": 0.19480519480519476,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7312514185905457,
+        "expert_reward": 0.7125964164733887,
+        "margin_expert_minus_gen": -0.018655002117156982
+      },
+      {
+        "question": "Generate a sentence with: sale, stack, stall",
+        "concepts": [
+          "sale",
+          "stack",
+          "stall"
+        ],
+        "gen_text": "Generate a sentence with: sale, stack, stall\nStep 1. The task requires integrating three specific terms into a coherent sentence. We need to use \"sale\" to denote trading goods, \"stack\" for quantities in arrangement or category, and \"stall\" typically found at markets selling items.\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: sale, stack, stall\nStep 1. Identify required concepts: sale, stack, stall\nStep 2. Plan sentence pattern: A vendor at a stall is organizing a sale where items are stacked.\nStep 3. Generate sentence: The vendor at the market stall is having a big sale, with neatly stacked items attracting many customers.\nFinal Answer: The vendor at the market stall is having a big sale, with neatly stacked items attracting many customers.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 66,
+        "bigram_repeat_ratio": 0.01538461538461533,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7746908664703369,
+        "expert_reward": 0.6236931085586548,
+        "margin_expert_minus_gen": -0.15099775791168213
+      },
+      {
+        "question": "Generate a sentence with: clock, entrance, sculpture",
+        "concepts": [
+          "clock",
+          "entrance",
+          "sculpture"
+        ],
+        "gen_text": "Generate a sentence with: clock, entrance, sculpture\nStep 1. To generate a sentence that incorporates a clock, entrance, and sculpture, first identify where such elements are commonly found.\nStep 2. Next, construct a context that logically includes all three in the same scene or scenario.\nStep 3. Develop the sentence using the identified context. Solution: Step\nFinal Answer: 3",
+        "expert_text": "Generate a sentence with: clock, entrance, sculpture\nStep 1. Identify required concepts: clock, entrance, sculpture\nStep 2. Plan sentence pattern: A scenario where a person or people are at an entrance and notice a sculpture that includes or is near a clock.\nStep 3. Generate sentence: As visitors approached the grand entrance, they were greeted by an impressive sculpture with an intricately designed clock embedded in its center.\nFinal Answer: As visitors approached the grand entrance, they were greeted by an impressive sculpture with an intricately designed clock embedded in its center.",
+        "coverage_ratio": 1.0,
+        "step_count": 4,
+        "step_marker": 1,
+        "length": 80,
+        "bigram_repeat_ratio": 0.10126582278481011,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.791183352470398,
+        "expert_reward": 0.7741274237632751,
+        "margin_expert_minus_gen": -0.017055928707122803
+      },
+      {
+        "question": "Generate a sentence with: blender, lettuce, tomato",
+        "concepts": [
+          "blender",
+          "lettuce",
+          "tomato"
+        ],
+        "gen_text": "Generate a sentence with: blender, lettuce, tomato\nStep 1. First, consider the items and context needed to form a complete and coherent sentence. We need items that can be associated in a kitchen setting, specifically involving a food preparation appliance.\nStep 2. A sentence that incorporates \"blender,\" \"lett\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: blender, lettuce, tomato\nStep 1. Identify required concepts: blender, lettuce, tomato\nStep 2. Plan sentence pattern: A person is using a kitchen appliance to prepare a dish with vegetables.\nStep 3. Generate sentence: She placed the lettuce and tomato into the blender to make a fresh, healthy smoothie.\nFinal Answer: She placed the lettuce and tomato into the blender to make a fresh, healthy smoothie.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 70,
+        "bigram_repeat_ratio": 0.02898550724637683,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7147785425186157,
+        "expert_reward": 0.621846079826355,
+        "margin_expert_minus_gen": -0.09293246269226074
+      },
+      {
+        "question": "Generate a sentence with: castle, island, sea",
+        "concepts": [
+          "castle",
+          "island",
+          "sea"
+        ],
+        "gen_text": "Generate a sentence with: castle, island, sea\nStep 1. In order to create a descriptive sentence, we need a basic sentence structure that connects the three given concepts: a castle, an island, and a sea.\nStep 2. We can use the location as a common linking theme. To achieve this connection, we will use \"in\" or \"on\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: castle, island, sea\nStep 1. Identify required concepts: castle, island, sea\nStep 2. Plan sentence pattern: A castle is located on an island which is surrounded by the sea.\nStep 3. Generate sentence: The ancient castle stands majestically on the remote island, surrounded by the vast, blue sea.\nFinal Answer: The ancient castle stands majestically on the remote island, surrounded by the vast, blue sea.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.0625,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7451021671295166,
+        "expert_reward": 0.6067599058151245,
+        "margin_expert_minus_gen": -0.1383422613143921
+      },
+      {
+        "question": "Generate a sentence with: model, runway, summer",
+        "concepts": [
+          "model",
+          "runway",
+          "summer"
+        ],
+        "gen_text": "Generate a sentence with: model, runway, summer\nStep 1. To create a sentence that has the concepts of model, runway, and summer, we can describe a scenario where a model, known for her summer wear, takes the runway in a seasonal clothing line.\nStep 2. The first part of our sentence relates to a fashionable model known for her spring and\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: model, runway, summer\nStep 1. Identify required concepts: model, runway, summer\nStep 2. Plan sentence pattern: A model is walking on a runway during a summer event or fashion show.\nStep 3. Generate sentence: The model confidently walked down the runway, showcasing vibrant summer outfits at the fashion show.\nFinal Answer: The model confidently walked down the runway, showcasing vibrant summer outfits at the fashion show.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.11250000000000004,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.6899175643920898,
+        "expert_reward": 0.617619514465332,
+        "margin_expert_minus_gen": -0.07229804992675781
+      },
+      {
+        "question": "Generate a sentence with: dusk, fishing, lighthouse",
+        "concepts": [
+          "dusk",
+          "fishing",
+          "lighthouse"
+        ],
+        "gen_text": "Generate a sentence with: dusk, fishing, lighthouse\nStep 1. Introduce the elements dusk, fishing, and lighthouse into a coherent sentence. Example sentence: At dusk, a group of fishermen started their night voyage along the coast and navigated towards a distant lighthouse for safety.\nFinal Answer: The\nStep 1. Introduce the elements dusk, fishing, and lighthouse into a coherent sentence. Example sentence: At dusk, a group of fishermen started their night voyage along the coast and navigated towards a distant lighthouse for safety.",
+        "expert_text": "Generate a sentence with: dusk, fishing, lighthouse\nStep 1. Identify required concepts: dusk, fishing, lighthouse\nStep 2. Plan sentence pattern: A person is fishing near a lighthouse during the time of dusk.\nStep 3. Generate sentence: As dusk settled over the horizon, the fisherman cast his line into the sea, guided by the steady beam of the nearby lighthouse.\nFinal Answer: As dusk settled over the horizon, the fisherman cast his line into the sea, guided by the steady beam of the nearby lighthouse.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 113,
+        "bigram_repeat_ratio": 0.4732142857142857,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7033880352973938,
+        "expert_reward": 0.7290614247322083,
+        "margin_expert_minus_gen": 0.025673389434814453
+      },
+      {
+        "question": "Generate a sentence with: airplane, airport, luggage",
+        "concepts": [
+          "airplane",
+          "airport",
+          "luggage"
+        ],
+        "gen_text": "Generate a sentence with: airplane, airport, luggage\nStep 1. It's important to note that the airplane and its luggage operation happens within the context of an airport. Let's assume that a person works in security checking for any potential hazards in luggage.\nStep 2. The relevant rate given here would be the speed at which the scanner can process items (such as\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: airplane, airport, luggage\nStep 1. Identify required concepts: airplane, airport, luggage\nStep 2. Plan sentence pattern: A person or people are at an airport with their luggage, and they are about to board an airplane.\nStep 3. Generate sentence: At the busy airport, travelers check in their luggage before boarding the airplane for their journey.\nFinal Answer: At the busy airport, travelers check in their luggage before boarding the airplane for their journey.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.025000000000000022,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.8339378833770752,
+        "expert_reward": 0.7376353740692139,
+        "margin_expert_minus_gen": -0.09630250930786133
+      },
+      {
+        "question": "Generate a sentence with: display, model, sale",
+        "concepts": [
+          "display",
+          "model",
+          "sale"
+        ],
+        "gen_text": "Generate a sentence with: display, model, sale\nStep 1. This sentence will be about showcasing a product in a store that has a sale happening.\nStep 2. We will create a scenario where the model of a specific electronic device is\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: display, model, sale\nStep 1. Identify required concepts: display, model, sale\nStep 2. Plan sentence pattern: A store or showroom is having a sale where they display a particular model of a product.\nStep 3. Generate sentence: The electronics store is having a big sale and prominently displays the latest model of the smartphone.\nFinal Answer: The electronics store is having a big sale and prominently displays the latest model of the smartphone.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 56,
+        "bigram_repeat_ratio": 0.036363636363636376,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7302764654159546,
+        "expert_reward": 0.6973851323127747,
+        "margin_expert_minus_gen": -0.03289133310317993
+      },
+      {
+        "question": "Generate a sentence with: cheese, pizza, sauce",
+        "concepts": [
+          "cheese",
+          "pizza",
+          "sauce"
+        ],
+        "gen_text": "Generate a sentence with: cheese, pizza, sauce\nStep 1. The task requires understanding how these common foods would fit together. We think about a pizza made with these ingredients as a set.\nStep 2. We assume that to make one complete pizza, it needs a single piece of cheese and\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: cheese, pizza, sauce\nStep 1. Identify required concepts: cheese, pizza, sauce\nStep 2. Plan sentence pattern: A description of the process of making a pizza, emphasizing the layering of the ingredients.\nStep 3. Generate sentence: First, the sauce is spread evenly over the pizza base, then generous amounts of cheese are sprinkled on top, creating a delicious and classic pizza.\nFinal Answer: First, the sauce is spread evenly over the pizza base, then generous amounts of cheese are sprinkled on top, creating a delicious and classic pizza.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 67,
+        "bigram_repeat_ratio": 0.06060606060606055,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7796516418457031,
+        "expert_reward": 0.6806535124778748,
+        "margin_expert_minus_gen": -0.09899812936782837
+      },
+      {
+        "question": "Generate a sentence with: container, lettuce, salad",
+        "concepts": [
+          "container",
+          "lettuce",
+          "salad"
+        ],
+        "gen_text": "Generate a sentence with: container, lettuce, salad\nStep 1. We need to determine if the container can hold a specific amount of lettuce for a lunch prep container. Container capacity = 10 liters Lettuce requirement = 2 liters per salad Number of salads = Container capacity ÷ Lettuce requirement\nStep 2. Calculate the number of\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: container, lettuce, salad\nStep 1. Identify required concepts: container, lettuce, salad\nStep 2. Plan sentence pattern: A person is preparing a salad using lettuce and placing it in a container.\nStep 3. Generate sentence: She carefully placed the freshly washed lettuce into the container to make a healthy salad.\nFinal Answer: She carefully placed the freshly washed lettuce into the container to make a healthy salad.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 79,
+        "bigram_repeat_ratio": 0.1282051282051282,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7393083572387695,
+        "expert_reward": 0.621274471282959,
+        "margin_expert_minus_gen": -0.11803388595581055
+      },
+      {
+        "question": "Generate a sentence with: dusk, silhouette, telescope",
+        "concepts": [
+          "dusk",
+          "silhouette",
+          "telescope"
+        ],
+        "gen_text": "Generate a sentence with: dusk, silhouette, telescope\nStep 1. First, I need to conceptualize how to construct a sentence\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: dusk, silhouette, telescope\nStep 1. Identify required concepts: dusk, silhouette, telescope\nStep 2. Plan sentence pattern: A person observes a silhouette at dusk using a telescope.\nStep 3. Generate sentence: At dusk, the astronomer used his telescope to observe the silhouette of a distant mountain range.\nFinal Answer: At dusk, the astronomer used his telescope to observe the silhouette of a distant mountain range.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 33,
+        "bigram_repeat_ratio": 0.0625,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7575902342796326,
+        "expert_reward": 0.6523064374923706,
+        "margin_expert_minus_gen": -0.10528379678726196
+      },
+      {
+        "question": "Generate a sentence with: brother, meadow, sister",
+        "concepts": [
+          "brother",
+          "meadow",
+          "sister"
+        ],
+        "gen_text": "Generate a sentence with: brother, meadow, sister\nStep 1. The scenario involves three siblings discussing their time at a family gathering. To represent all three, we should consider a phrase that includes sibling(s). We can use \"visited the cousin\" which includes the concepts of family interaction.\nStep 2. Here, they went to a wide open field where they engaged\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: brother, meadow, sister\nStep 1. Identify required concepts: brother, meadow, sister\nStep 2. Plan sentence pattern: A scenario where the brother and sister are in a meadow together, possibly engaging in an activity or simply being present.\nStep 3. Generate sentence: My brother and sister and I spent the afternoon playing in the sunlit meadow.\nFinal Answer: My brother and sister and I spent the afternoon playing in the sunlit meadow.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 82,
+        "bigram_repeat_ratio": 0.024691358024691357,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.8313363790512085,
+        "expert_reward": 0.8407610654830933,
+        "margin_expert_minus_gen": 0.009424686431884766
+      },
+      {
+        "question": "Generate a sentence with: bow, gift, ribbon",
+        "concepts": [
+          "bow",
+          "gift",
+          "ribbon"
+        ],
+        "gen_text": "Generate a sentence with: bow, gift, ribbon\nStep 1. The task is to integrate three key elements (bow, gift, ribbon) into a cohesive thought using common thematic associations such as seasonal decorations or gift-related presents.\nStep 2. We can use a scenario where someone is decorating\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: bow, gift, ribbon\nStep 1. Identify required concepts: bow, gift, ribbon\nStep 2. Plan sentence pattern: A person is preparing a gift and uses a ribbon to create a bow on it. This scenario involves the action of decorating a gift with a specific type of decoration (a bow) made from another item (a ribbon).\nStep 3. Generate sentence: She carefully tied a ribbon into a perfect bow to decorate the gift.\nFinal Answer: She carefully tied a ribbon into a perfect bow to decorate the gift.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 66,
+        "bigram_repeat_ratio": 0.07692307692307687,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.8033722639083862,
+        "expert_reward": 0.7055970430374146,
+        "margin_expert_minus_gen": -0.09777522087097168
+      },
+      {
+        "question": "Generate a sentence with: form, handle, star",
+        "concepts": [
+          "form",
+          "handle",
+          "star"
+        ],
+        "gen_text": "Generate a sentence with: form, handle, star\nStep 1. To create a perfect square formation, I need to determine the side length of the square.\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: form, handle, star\nStep 1. Identify required concepts: form, handle, star\nStep 2. Plan sentence pattern: A person forms a shape or object (in this case, a star) and then handles it, possibly for display or use.\nStep 3. Generate sentence: The artist carefully forms a star out of clay and then delicately handles it to place it on the shelf.\nFinal Answer: The artist carefully forms a star out of clay and then delicately handles it to place it on the shelf.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 38,
+        "bigram_repeat_ratio": 0.027027027027026973,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.6995461583137512,
+        "expert_reward": 0.6169254779815674,
+        "margin_expert_minus_gen": -0.08262068033218384
+      },
+      {
+        "question": "Generate a sentence with: display, pizza, variety",
+        "concepts": [
+          "display",
+          "pizza",
+          "variety"
+        ],
+        "gen_text": "Generate a sentence with: display, pizza, variety\nStep 1. We start with organizing words in a way they describe \"display\" along with \"pizza and variety\".\nStep 2. Plan the sentence: The owners arranged an eye-catching display with a variety of delicious pizzas for the town meeting.\nFinal Answer:\nStep 2. Plan the sentence: The owners arranged an eye-catching display with a variety of delicious pizzas for the town meeting.",
+        "expert_text": "Generate a sentence with: display, pizza, variety\nStep 1. Identify required concepts: display, pizza, variety\nStep 2. Plan sentence pattern: A setting where different types of pizzas are shown or presented, emphasizing the range or diversity of options.\nStep 3. Generate sentence: The pizzeria has a beautiful display showcasing a variety of delicious pizzas.\nFinal Answer: The pizzeria has a beautiful display showcasing a variety of delicious pizzas.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 90,
+        "bigram_repeat_ratio": 0.2808988764044944,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.6765779852867126,
+        "expert_reward": 0.5971054434776306,
+        "margin_expert_minus_gen": -0.07947254180908203
+      },
+      {
+        "question": "Generate a sentence with: passenger, ship, trip",
+        "concepts": [
+          "passenger",
+          "ship",
+          "trip"
+        ],
+        "gen_text": "Generate a sentence with: passenger, ship, trip\nStep 1. The distance traveled by a ship can be calculated using the formula: Distance (miles) = Speed (miles per hour) × Time (hours).\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: passenger, ship, trip\nStep 1. Identify required concepts: passenger, ship, trip\nStep 2. Plan sentence pattern: A passenger is taking a trip on a ship.\nStep 3. Generate sentence: The excited passenger boarded the luxurious cruise ship for a week-long trip to the Caribbean.\nFinal Answer: The excited passenger boarded the luxurious cruise ship for a week-long trip to the Caribbean.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 51,
+        "bigram_repeat_ratio": 0.06000000000000005,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.802878201007843,
+        "expert_reward": 0.6736785769462585,
+        "margin_expert_minus_gen": -0.12919962406158447
+      },
+      {
+        "question": "Generate a sentence with: cattle, herd, morning",
+        "concepts": [
+          "cattle",
+          "herd",
+          "morning"
+        ],
+        "gen_text": "Generate a sentence with: cattle, herd, morning\nStep 1. The scenario needs to be clearly understood first, so let's state that a new farm has set a daily routine for managing its herd which starts in the morning with gathering and counting.\nStep 2. The task is to write a sentence incorporating the necessary keywords: cattle, herd, morning. Step\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: cattle, herd, morning\nStep 1. Identify required concepts: cattle, herd, morning\nStep 2. Plan sentence pattern: A scenario where a group of cattle (herd) is observed or managed during the morning.\nStep 3. Generate sentence: In the early morning, the farmer guided the herd of cattle to the pasture for grazing.\nFinal Answer: In the early morning, the farmer guided the herd of cattle to the pasture for grazing.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 80,
+        "bigram_repeat_ratio": 0.11392405063291144,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.764359176158905,
+        "expert_reward": 0.7433954477310181,
+        "margin_expert_minus_gen": -0.020963728427886963
+      },
+      {
+        "question": "Generate a sentence with: sailing, sea, ship",
+        "concepts": [
+          "sailing",
+          "sea",
+          "ship"
+        ],
+        "gen_text": "Generate a sentence with: sailing, sea, ship\nStep 1. Understand the task is to generate a sentence that includes the terms \"sailing, \" \"sea,\" and \"ship.\" The goal here is descriptive and does not require mathematical calculations. Solution Sentence: \"The old ship set sail on a calm sea\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: sailing, sea, ship\nStep 1. Identify required concepts: sailing, sea, ship\nStep 2. Plan sentence pattern: A ship is engaged in the activity of sailing on the sea.\nStep 3. Generate sentence: The majestic ship was sailing smoothly across the vast sea.\nFinal Answer: The majestic ship was sailing smoothly across the vast sea.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 70,
+        "bigram_repeat_ratio": 0.02898550724637683,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.6975934505462646,
+        "expert_reward": 0.6649068593978882,
+        "margin_expert_minus_gen": -0.032686591148376465
+      },
+      {
+        "question": "Generate a sentence with: cattle, graze, lake",
+        "concepts": [
+          "cattle",
+          "graze",
+          "lake"
+        ],
+        "gen_text": "Generate a sentence with: cattle, graze, lake\nStep 1. To generate a sentence that includes the words \"cattle,\" \"graze,\" and \"lake,\" we need to logically position these concepts in a grammatically correct sequence.\nStep 2. The cattle will be the subject, performing the action of grazing (eating grass).\nStep 3. They will\nFinal Answer: 3",
+        "expert_text": "Generate a sentence with: cattle, graze, lake\nStep 1. Identify required concepts: cattle, graze, lake\nStep 2. Plan sentence pattern: The cattle are grazing near a lake.\nStep 3. Generate sentence: The cattle graze peacefully near the serene lake.\nFinal Answer: The cattle graze peacefully near the serene lake.",
+        "coverage_ratio": 1.0,
+        "step_count": 4,
+        "step_marker": 1,
+        "length": 82,
+        "bigram_repeat_ratio": 0.04938271604938271,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7853578329086304,
+        "expert_reward": 0.725344181060791,
+        "margin_expert_minus_gen": -0.060013651847839355
+      },
+      {
+        "question": "Generate a sentence with: know, location, thing",
+        "concepts": [
+          "know",
+          "location",
+          "thing"
+        ],
+        "gen_text": "Generate a sentence with: know, location, thing",
+        "expert_text": "Generate a sentence with: know, location, thing\nStep 1. Identify required concepts: know, location, thing\nStep 2. Plan sentence pattern: A person knows the location of a specific thing.\nStep 3. Generate sentence: She knows the exact location of the lost thing in the house.\nFinal Answer: She knows the exact location of the lost thing in the house.",
+        "coverage_ratio": 1.0,
+        "step_count": 0,
+        "step_marker": 0,
+        "length": 10,
+        "bigram_repeat_ratio": 0.0,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7215694189071655,
+        "expert_reward": 0.681086003780365,
+        "margin_expert_minus_gen": -0.04048341512680054
+      },
+      {
+        "question": "Generate a sentence with: airplane, banner, businessman",
+        "concepts": [
+          "airplane",
+          "banner",
+          "businessman"
+        ],
+        "gen_text": "Generate a sentence with: airplane, banner, businessman\nStep 1. Next, we need to think about how to place words in a sentence to describe a scenario involving an airplane, a banner, and a businessman.\nStep 2. We want a cohesive sentence so all three objects are described by the businessman's actions.\nStep 3. The sentence will be that a\nFinal Answer: 3",
+        "expert_text": "Generate a sentence with: airplane, banner, businessman\nStep 1. Identify required concepts: airplane, banner, businessman\nStep 2. Plan sentence pattern: A businessman is involved in an activity related to an airplane and a banner. The scenario could be that the businessman is using an airplane to display a banner for advertising or promotional purposes.\nStep 3. Generate sentence: The ambitious businessman hired an airplane to fly a large banner over the city, advertising his new product.\nFinal Answer: The ambitious businessman hired an airplane to fly a large banner over the city, advertising his new product.",
+        "coverage_ratio": 1.0,
+        "step_count": 4,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.08750000000000002,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7587050199508667,
+        "expert_reward": 0.6972934007644653,
+        "margin_expert_minus_gen": -0.06141161918640137
+      },
+      {
+        "question": "Generate a sentence with: canoe, lake, reflection",
+        "concepts": [
+          "canoe",
+          "lake",
+          "reflection"
+        ],
+        "gen_text": "Generate a sentence with: canoe, lake, reflection",
+        "expert_text": "Generate a sentence with: canoe, lake, reflection\nStep 1. Identify required concepts: canoe, lake, reflection\nStep 2. Plan sentence pattern: A canoe is on a lake, and the reflection of the canoe can be seen in the water.\nStep 3. Generate sentence: The canoe glides smoothly over the calm lake, its reflection perfectly mirrored in the still water.\nFinal Answer: The canoe glides smoothly over the calm lake, its reflection perfectly mirrored in the still water.",
+        "coverage_ratio": 1.0,
+        "step_count": 0,
+        "step_marker": 0,
+        "length": 10,
+        "bigram_repeat_ratio": 0.0,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.6698955297470093,
+        "expert_reward": 0.587800145149231,
+        "margin_expert_minus_gen": -0.08209538459777832
+      },
+      {
+        "question": "Generate a sentence with: beige, bow, sale",
+        "concepts": [
+          "beige",
+          "bow",
+          "sale"
+        ],
+        "gen_text": "Generate a sentence with: beige, bow, sale\nStep 1. The sentence needs to include all three concepts without having multiple equations or steps, thus simply combining them logically for a grammatically correct sentence. Step description: Combine \"beige\", \"\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: beige, bow, sale\nStep 1. Identify required concepts: beige, bow, sale\nStep 2. Plan sentence pattern: A scenario where a beige item with a bow is on sale in a store.\nStep 3. Generate sentence: The store has a beautiful beige dress with a delicate bow on sale this weekend.\nFinal Answer: The store has a beautiful beige dress with a delicate bow on sale this weekend.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 56,
+        "bigram_repeat_ratio": 0.018181818181818188,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7286242842674255,
+        "expert_reward": 0.6303247213363647,
+        "margin_expert_minus_gen": -0.09829956293106079
+      },
+      {
+        "question": "Generate a sentence with: airplane, runway, terminal",
+        "concepts": [
+          "airplane",
+          "runway",
+          "terminal"
+        ],
+        "gen_text": "Generate a sentence with: airplane, runway, terminal\nStep 1. First, imagine a common scenario where people are observing an airplane movement. An airplane needs to taxi on the runway and then take off, eventually reaching the terminal where passengers board or disembark.\nStep 2. To understand the relationship between these three elements (airplane, runway, and terminal), consider\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: airplane, runway, terminal\nStep 1. Identify required concepts: airplane, runway, terminal\nStep 2. Plan sentence pattern: The sentence should describe a scenario where an airplane is interacting with both the runway and the terminal. A logical sequence would be that the airplane is taking off or landing, which involves the runway, and then it is either heading to or from the terminal.\nStep 3. Generate sentence: The airplane taxied down the runway and headed towards the terminal for passenger boarding.\nFinal Answer: The airplane taxied down the runway and headed towards the terminal for passenger boarding.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.050000000000000044,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7835948467254639,
+        "expert_reward": 0.7215155959129333,
+        "margin_expert_minus_gen": -0.06207925081253052
+      },
+      {
+        "question": "Generate a sentence with: approach, carriage, passenger",
+        "concepts": [
+          "approach",
+          "carriage",
+          "passenger"
+        ],
+        "gen_text": "Generate a sentence with: approach, carriage, passenger\nStep 1. We have 50 passenger vehicles approaching a train at 6 mph. The distance between the passenger vehicles and the train is 2,400 meters. They are following each other in single file without spaces. The passenger vehicles continue toward the train at a steady speed. We need\nFinal Answer: 400",
+        "expert_text": "Generate a sentence with: approach, carriage, passenger\nStep 1. Identify required concepts: approach, carriage, passenger\nStep 2. Plan sentence pattern: A scenario where a passenger is in or near a carriage and something (or someone) approaches the carriage.\nStep 3. Generate sentence: As the carriage rolled down the cobblestone street, a mysterious figure began to approach, causing the passenger to lean out of the window to get a better look.\nFinal Answer: As the carriage rolled down the cobblestone street, a mysterious figure began to approach, causing the passenger to lean out of the window to get a better look.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.09999999999999998,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7558611631393433,
+        "expert_reward": 0.6752668619155884,
+        "margin_expert_minus_gen": -0.08059430122375488
+      },
+      {
+        "question": "Generate a sentence with: center, cream, daughter, hall, sofa",
+        "concepts": [
+          "center",
+          "cream",
+          "daughter",
+          "hall",
+          "sofa"
+        ],
+        "gen_text": "Generate a sentence with: center, cream, daughter, hall, sofa\nStep 1. Place the center of a family gathering where the daughter is on a single-cushion seat, near a grand hall, and beside a wide sofa for seating. There are six people including her around the central area.\nStep 2. The arrangement suggests that there are five seats surrounding the center: one\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: center, cream, daughter, hall, sofa\nStep 1. Identify required concepts: center, cream, daughter, hall, sofa\nStep 2. Plan sentence pattern: A scenario where a daughter is in the center of a hall, and there is a mention of a cream-colored sofa.\nStep 3. Generate sentence: The daughter stood in the center of the hall, admiring the new cream-colored sofa that had just been placed there.\nFinal Answer: The daughter stood in the center of the hall, admiring the new cream-colored sofa that had just been placed there.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 85,
+        "bigram_repeat_ratio": 0.04761904761904767,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.8270333409309387,
+        "expert_reward": 0.760694146156311,
+        "margin_expert_minus_gen": -0.06633919477462769
+      },
+      {
+        "question": "Generate a sentence with: farm, farmer, town",
+        "concepts": [
+          "farm",
+          "farmer",
+          "town"
+        ],
+        "gen_text": "Generate a sentence with: farm, farmer, town\nStep 1. The task requires generating a sentence that involves at least three words from the given set: farm, farmer, and town.\nStep 2. To incorporate these words in a meaningful way, we will create a scenario where a person (a farmer)\nFinal Answer: 2",
+        "expert_text": "Generate a sentence with: farm, farmer, town\nStep 1. Identify required concepts: farm, farmer, town\nStep 2. Plan sentence pattern: A scenario where a farmer from a farm has a connection or interaction with the nearby town.\nStep 3. Generate sentence: The farmer from the local farm travels to the nearby town every weekend to sell fresh produce at the market.\nFinal Answer: The farmer from the local farm travels to the nearby town every weekend to sell fresh produce at the market.",
+        "coverage_ratio": 1.0,
+        "step_count": 3,
+        "step_marker": 1,
+        "length": 69,
+        "bigram_repeat_ratio": 0.1029411764705882,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.8129762411117554,
+        "expert_reward": 0.6988513469696045,
+        "margin_expert_minus_gen": -0.11412489414215088
+      },
+      {
+        "question": "Generate a sentence with: aircraft, model, pilot",
+        "concepts": [
+          "aircraft",
+          "model",
+          "pilot"
+        ],
+        "gen_text": "Generate a sentence with: aircraft, model, pilot\nStep 1. The task is to generate a sentence with the concepts of aircraft, model, and pilot.\nStep 2. A simple sentence that incorporates all three concepts naturally could be about someone operating a model aircraft.\nStep 3. Formulate the sentence: The skilled pilot spent a sunny afternoon flying a sleek model\nFinal Answer: 3",
+        "expert_text": "Generate a sentence with: aircraft, model, pilot\nStep 1. Identify required concepts: aircraft, model, pilot\nStep 2. Plan sentence pattern: A pilot is interacting with a model of an aircraft.\nStep 3. Generate sentence: The experienced pilot carefully examines the detailed model of the new aircraft before the test flight.\nFinal Answer: The experienced pilot carefully examines the detailed model of the new aircraft before the test flight.",
+        "coverage_ratio": 1.0,
+        "step_count": 4,
+        "step_marker": 1,
+        "length": 81,
+        "bigram_repeat_ratio": 0.11250000000000004,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.7242686748504639,
+        "expert_reward": 0.6357462406158447,
+        "margin_expert_minus_gen": -0.08852243423461914
+      },
+      {
+        "question": "Generate a sentence with: aisle, employee, shelf",
+        "concepts": [
+          "aisle",
+          "employee",
+          "shelf"
+        ],
+        "gen_text": "Generate a sentence with: aisle, employee, shelf\nStep 1. Choose an order for incorporating the three required terms into a sentence logically. The sentence will describe an interaction between an\nFinal Answer: 1",
+        "expert_text": "Generate a sentence with: aisle, employee, shelf\nStep 1. Identify required concepts: aisle, employee, shelf\nStep 2. Plan sentence pattern: An employee is working in an aisle and interacting with a shelf.\nStep 3. Generate sentence: The store employee carefully restocks the items on the shelf while walking down the aisle.\nFinal Answer: The store employee carefully restocks the items on the shelf while walking down the aisle.",
+        "coverage_ratio": 1.0,
+        "step_count": 2,
+        "step_marker": 1,
+        "length": 43,
+        "bigram_repeat_ratio": 0.04761904761904767,
+        "degenerate_ratio": 0.0,
+        "gen_reward": 0.8377867937088013,
+        "expert_reward": 0.7833103537559509,
+        "margin_expert_minus_gen": -0.05447643995285034
+      }
+    ]
+  }
+}
